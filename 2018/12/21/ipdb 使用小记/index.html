@@ -68,7 +68,7 @@
 <meta property="og:url" content="http://wulc.github.io/2018/12/21/ipdb 使用小记/index.html">
 <meta property="og:site_name" content="吴良超的学习笔记">
 <meta property="og:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
-<meta property="og:updated_time" content="2018-12-22T01:00:00.746Z">
+<meta property="og:updated_time" content="2018-12-22T14:53:27.804Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ipdb 使用小记">
 <meta name="twitter:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
@@ -380,6 +380,7 @@
 <li>通过命令 <code>clear</code> 或 <code>cl</code> 清除这些断点</li>
 </ol>
 <p>此外，除了上面那种一直存在的断点，ipdb 中还有一种<strong>只生效一次的断点，命令为 <code>tbreak</code>, 使用方法同命令 <code>b</code>。</strong></p>
+<p>上面的断点都是直接指定的，pdb 中还有一种<strong>条件断点</strong>，即只有当某个条件成立时，才设置断点，其使用命令为 <code>condition line_num bool_expression</code>, condition 为关键字，line_num 为设定断点的位置，只有当 expression 为 true 时, 才会设置这个断点。</p>
 <p>如果需要列出已经设置的所有断点，可以单独使用命令 <code>b</code>。</p>
 <h3 id="逐行执行"><a href="#逐行执行" class="headerlink" title="逐行执行"></a>逐行执行</h3><p>有两条命令可以进行逐行执行： <code>s</code>（step) 或 <code>n</code>（next), 两个命令的主要区别是：<strong>假如当前行调用了某个函数，<code>s</code> 会进入这个函数，<code>n</code> 则不会</strong>。因此，如果需要了解函数内部执行的细节，需要 <code>s</code> 命令进入函数内部进行 debug。</p>
 <p><strong>进入了函数之后</strong>，通过命令 <code>a</code>（argument） 可列出当前的函数的参数，通过 <code>r</code>（return）则可以直接执行至 return 语句。</p>
