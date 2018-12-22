@@ -68,7 +68,7 @@
 <meta property="og:url" content="http://wulc.github.io/2018/12/21/ipdb 使用小记/index.html">
 <meta property="og:site_name" content="吴良超的学习笔记">
 <meta property="og:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
-<meta property="og:updated_time" content="2018-12-21T14:07:10.203Z">
+<meta property="og:updated_time" content="2018-12-22T01:00:00.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ipdb 使用小记">
 <meta name="twitter:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
@@ -356,7 +356,7 @@
       
         <p>最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 <code>import tensorflow as tf</code> 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 <a href="https://pypi.org/project/ipdb/" target="_blank" rel="external">ipdb</a> 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naive。</p>
 <a id="more"></a>
-<p>python 提供了一个默认的 debugger：<a href="https://docs.python.org/3.5/library/pdb.html" target="_blank" rel="external">pdb</a>，而 ipdb 则是 pdb 的增强版，提供了补全、语法高亮等功能，类似于 ipython 与默认的 python 解释器的关系，通过 <code>pip install ipdb</code> 即可安装 ipdb。</p>
+<p>python 提供了一个默认的 debugger：<a href="https://docs.python.org/3.5/library/pdb.html" target="_blank" rel="external">pdb</a>，而 ipdb 则是 pdb 的增强版，提供了补全、语法高亮等功能，类似于 ipython 与 python 默认的交互终端的关系，通过 <code>pip install ipdb</code> 即可安装 ipdb。</p>
 <h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><p>ipdb 的使用方法一般有两种：<strong>集成到源代码或通过命令交互</strong>。</p>
 <p>集成到源代码可以直接在代码指定位置插入断点。如下所示：</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ipdb</span><br><span class="line">var1 = <span class="number">23</span></span><br><span class="line">ipdb.set_trace()</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
