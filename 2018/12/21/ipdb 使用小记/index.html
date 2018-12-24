@@ -68,7 +68,7 @@
 <meta property="og:url" content="http://wulc.github.io/2018/12/21/ipdb 使用小记/index.html">
 <meta property="og:site_name" content="吴良超的学习笔记">
 <meta property="og:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
-<meta property="og:updated_time" content="2018-12-22T15:23:41.191Z">
+<meta property="og:updated_time" content="2018-12-22T15:27:27.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ipdb 使用小记">
 <meta name="twitter:description" content="最近在魔改 loss function，涉及到很多矩阵运算，而矩阵运算中维度的对齐免不了要多次的调试；沿袭着之前的 print 大法弄了一段时间后，不仅代码凌乱不堪，而且心累：每次 import tensorflow as tf 都要十几秒，然后 print 完之后想进一步看其他变量的信息，又要重新执行一遍。后来找到了 ipdb 这个好用的工具，才发现自己过去调试程序的方法是多么的低效和 naiv">
@@ -387,7 +387,7 @@
 <h3 id="忽略某段代码"><a href="#忽略某段代码" class="headerlink" title="忽略某段代码"></a>忽略某段代码</h3><p>使用 <code>j line_number</code> 可以忽略某段代码，下一步直接从 line_number 开始执行。</p>
 <h3 id="查看源码"><a href="#查看源码" class="headerlink" title="查看源码"></a>查看源码</h3><p>通过命令 <code>l</code> 或 <code>ll</code> 可查看源码， <code>ll</code> 是查看整个源码文件， <code>l</code> 可指定需要查看的行数，默认是当前往后 11 行，也可指定具体的范围，如 <code>l 2,5</code> 是查看第 2-5 行的源码。</p>
 <h3 id="重启或退出-debugger"><a href="#重启或退出-debugger" class="headerlink" title="重启或退出 debugger"></a>重启或退出 debugger</h3><p>上面已经提到了重启 debugger 可通过 <code>restart</code> 或 <code>run</code> 命令，需要注意的是，<strong>重启 debugger 后断点、debugger 的设置等是会保留的。</strong>如果要一个全新的 debugger，可通过命令 <code>q</code>、<code>quit</code> 或 <code>exit</code> 退出 debugger 后进入。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>以上就是 ipdb 的一些基本用法；除此之外，更多的用法可参考 <a href="https://docs.python.org/3.5/library/pdb.html" target="_blank" rel="external">pdb 的官方文档</a>，ipdb 的命令跟 pdb 是一样的。另外，C/C++ 中的 gdb 也是一个类似的命令行 debugger，只是用来调试 C/C++ 而已，使用的方法类似，甚至很多命令的名称都一样，具体可参考 <a href="http://wiki.ubuntu.org.cn/%E7%94%A8GDB%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F" target="_blank" rel="external">用GDB调试程序</a>。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>以上就是 ipdb 的一些基本用法；除此之外，更多的用法可参考 <a href="https://docs.python.org/3.5/library/pdb.html" target="_blank" rel="external">pdb 的官方文档</a>，ipdb 的命令跟 pdb 是一样的。另外，gdb 也是一个类似的命令行 debugger，只是一般用来调试 C/C++ 而已，使用的方法类似，甚至很多命令的名称更 pdb 都一样，具体可参考 <a href="http://wiki.ubuntu.org.cn/%E7%94%A8GDB%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F" target="_blank" rel="external">用GDB调试程序</a>。</p>
 
       
     </div>
