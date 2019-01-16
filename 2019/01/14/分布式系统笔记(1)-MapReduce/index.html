@@ -69,7 +69,7 @@
 <meta property="og:site_name" content="吴良超的学习笔记">
 <meta property="og:description" content="一直都想系统性地学习一下分布式系统的一些理论，趁着毕设搞得七七八八，刚好又放寒假，所以打算开个坑学习一下 MIT 的课程 6.824: Distributed Systems 。本文主要是 LEC 1 中的内容，简单介绍了分布式系统的几个核心问题，以及经典的分布式计算框架-MapReduce, 虽然这是耳熟能详的一个框架（或者说是编程范式）了，但是其设计思想至今还是非常值得参考的。">
 <meta property="og:image" content="http://static.zybuluo.com/WuLiangchao/tjvvwogwocm7eqpu1ju2jl3m/image_1d17mcpgj1l74h1p88g19t4bvu9.png">
-<meta property="og:updated_time" content="2019-01-15T15:24:40.262Z">
+<meta property="og:updated_time" content="2019-01-16T02:52:06.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式系统笔记(1)-MapReduce">
 <meta name="twitter:description" content="一直都想系统性地学习一下分布式系统的一些理论，趁着毕设搞得七七八八，刚好又放寒假，所以打算开个坑学习一下 MIT 的课程 6.824: Distributed Systems 。本文主要是 LEC 1 中的内容，简单介绍了分布式系统的几个核心问题，以及经典的分布式计算框架-MapReduce, 虽然这是耳熟能详的一个框架（或者说是编程范式）了，但是其设计思想至今还是非常值得参考的。">
@@ -308,6 +308,19 @@
             
           </span>
 
+
+          
+            <span class="post-meta-divider">|</span>
+          
+
+          
+            <div class="post-tags">
+              
+                <a href="/tags/分布式/" rel="tag">分布式</a>
+              
+            </div>
+          
+
           
             
           
@@ -347,7 +360,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Map: (k1,v1) → list(k2,v2)</span><br><span class="line">Reduce: (k2,list(v2)) → list(v2)</span><br></pre></td></tr></table></figure>
 <p>这个过程理解起来很简单，框架使用起来也不麻烦，这是因为 MapReduce 框架隐藏了上图中通过 master 追踪各个 task 是否顺利完成、以及如何进行 fault tolerance，而这也是论文最值得关注的点之一。</p>
 <h3 id="Execution-Overview"><a href="#Execution-Overview" class="headerlink" title="Execution Overview"></a>Execution Overview</h3><p>上面讲的 MapReduce 过程可以说是一个编程范式，下面主要根据原始论文讲述整体的执行流程，各个步骤的编号跟上图保持一致</p>
-<p>(1) User Program 中的 MapReduce 库会将输入分成 M 个小文件（通常是 16MB 到 64MB），然后 fork 出多个子进程<br>(2) 子进程中有一个作为 master，其他作为 worker。假设有 M 个 map task 和 R 个 reduce task（M 和 R 都远大于机器数量），master 会分配挑选处于 idle 的 worker 分配 task<br>(3) 被分配了 map task 的 worker 读入对应的输入文件，从输入文件中解析出 key/value pairs，并将每个 pair 输入用户自定义的 Map 函数，Map 函数输出的 intermediate key/value pairs 被缓存在内存中<br>(4) <strong>缓存在内存中的 intermediate key/value pairs 会被周期性地写入 map worker 本地的磁盘</strong>，根据 key 的不同分别写入到 R 个本地文件中，然后<strong>这些文件在本地的路径会传输给 master，从而 master 可以告知 reducer worker 到哪里读取数据</strong><br>(5) <strong>直到所有的 Map 过程完成，Reduce 过程才能开始</strong>；当 reduce worker 被 master 告知要读取的文件的位置时，会通过 RPC 从 map worker 的磁盘读取这些数据；reduce worker 读取完所有的 intermediate key/value pairs 后会针对 key 进行排序**，从而让所有相同的 key 汇聚在一块<br>(6) reduce worker 遍历排序后的 pairs，并将每个独立的 key 及其对应的 value 集合传输给 Reduce 函数，Reduce 函数则会将输出添加至最终的文件中。</p>
+<p>(1) User Program 中的 MapReduce 库会将输入分成 M 个小文件（通常是 16MB 到 64MB），然后 fork 出多个子进程<br>(2) 子进程中有一个作为 master，其他作为 worker。假设有 M 个 map task 和 R 个 reduce task（<strong>M 和 R 都远大于机器数量</strong>），master 会分配挑选处于 idle 的 worker 分配 task<br>(3) 被分配了 map task 的 worker 读入对应的输入文件，从输入文件中解析出 key/value pairs，并将每个 pair 输入用户自定义的 Map 函数，Map 函数输出的 intermediate key/value pairs 被缓存在内存中<br>(4) <strong>缓存在内存中的 intermediate key/value pairs 会被周期性地写入 map worker 本地的磁盘</strong>，根据 key 的不同分别写入到 R 个本地文件中，然后<strong>这些文件在本地的路径会传输给 master，从而 master 可以告知 reducer worker 到哪里读取数据</strong><br>(5) <strong>直到所有的 Map 过程完成，Reduce 过程才能开始</strong>；当 reduce worker 被 master 告知要读取的文件的位置时，会通过 RPC 从 map worker 的磁盘读取这些数据；reduce worker 读取完所有的 intermediate key/value pairs 后会针对 key 进行排序**，从而让所有相同的 key 汇聚在一块<br>(6) reduce worker 遍历排序后的 pairs，并将每个独立的 key 及其对应的 value 集合传输给 Reduce 函数，Reduce 函数则会将输出添加至最终的文件中。</p>
 <p>在完成一个 MapReduce 计算过程后会产生 R 个文件，但是<strong>一般不需要对这 R 个文件进行合并</strong>，因为这些文件可能会被作为下一个 MapReduce 计算的输入，或者被另外的分布式引用处理，而分布式应用往往能够处理这样被分隔后的小文件。另外，这里的 MapReduce 配合了 GFS 的使用，所以从磁盘读写直接使用的是 GFS 文件系统。</p>
 <h3 id="Master-与-Fault-Tolerance"><a href="#Master-与-Fault-Tolerance" class="headerlink" title="Master 与 Fault Tolerance"></a>Master 与 Fault Tolerance</h3><p>master 会记录每个 map task 和 reduce task 的状态(idle, in-progress 或者 completed), 对于那些不是 idle 的task，master 还会记录执行这个 task 的机器。</p>
 <p>从上面描述的 MapReduce 流程可知，master 是 map worker 和 reduce worker 的桥梁，每个 map task 完成后都会将其产生的 M 个文件的路径和大小传输给 master，master 则会将这些信息 push 给那些有处于 in-progress task 的 reduce worker。</p>
@@ -394,7 +407,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/分布式/" rel="tag"># 分布式</a>
+            <a href="/tags/分布式/" rel="tag">分布式</a>
           
         </div>
       
