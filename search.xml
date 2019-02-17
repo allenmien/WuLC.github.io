@@ -24,13 +24,13 @@
 <p>(1) 随着数据量的增加，参数分布会越来越向数据靠拢，先验的影响力会越来越小<br>(2) <strong>如果先验是 uniform distribution，则贝叶斯方法等价于频率方法</strong>。因为直观上来讲，先验是uniform distribution本质上表示对事物没有任何预判</p>
 <h2 id="MLE-最大似然估计"><a href="#MLE-最大似然估计" class="headerlink" title="MLE - 最大似然估计"></a>MLE - 最大似然估计</h2><p>Maximum Likelihood Estimation, MLE是频率学派常用的估计方法！</p>
 <p>假设数据 $x_1, x_2, …, x_n$  是 i.i.d.的一组抽样，$X = (x_1, x_2, …, x_n)$ 。其中i.i.d.表示Independent and identical distribution，独立同分布。那么MLE对 $\theta$ 的估计方法可以如下推导：</p>
-<p>$$\begin{align<em>}<br>\hat{\theta}_\text{MLE} &amp;= \arg \max P(X; \theta) \\<br>&amp;= \arg \max P(x_1; \theta) P(x_2; \theta) \cdot\cdot\cdot\cdot P(x_n;\theta) \\<br>&amp; = \arg \max\log \prod_{i=1}^{n} P(x_i; \theta) \\<br>&amp;= \arg \max \sum_{i=1}^{n} \log P(x_i; \theta) \\<br>&amp;= \arg \min - \sum_{i=1}^{n} \log P(x_i; \theta)<br>\end{align</em>}$$</p>
+<p>$$\begin{align*}<br>\hat{\theta}_\text{MLE} &amp;= \arg \max P(X; \theta) \\<br>&amp;= \arg \max P(x_1; \theta) P(x_2; \theta) \cdot\cdot\cdot\cdot P(x_n;\theta) \\<br>&amp; = \arg \max\log \prod_{i=1}^{n} P(x_i; \theta) \\<br>&amp;= \arg \max \sum_{i=1}^{n} \log P(x_i; \theta) \\<br>&amp;= \arg \min - \sum_{i=1}^{n} \log P(x_i; \theta)<br>\end{align*}$$</p>
 <p>最后这一行所优化的函数被称为 <strong>Negative Log Likelihood (NLL)</strong>，这个概念和上面的推导是非常重要的！</p>
 <p>我们经常在不经意间使用MLE，例如</p>
 <p>上文中关于频率学派求硬币概率的例子，其方法其实本质是由优化NLL得出。本文末尾附录中给出了具体的原因 :-)<br>给定一些数据，求对应的高斯分布时，我们经常会算这些数据点的均值和方差然后带入到高斯分布的公式，其理论依据是优化NLL<br>深度学习做分类任务时所用的cross entropy loss，其本质也是MLE</p>
 <h2 id="MAP-最大后验估计"><a href="#MAP-最大后验估计" class="headerlink" title="MAP - 最大后验估计"></a>MAP - 最大后验估计</h2><p>Maximum A Posteriori, MAP是贝叶斯学派常用的估计方法！</p>
 <p>同样的，假设数据 $x_1, x_2, …, x_n$  是i.i.d.的一组抽样，$X = (x_1, x_2, …, x_n)$ 。那么MAP对 $\theta$ 的估计方法可以如下推导：</p>
-<p>$$\begin{align<em>}<br>\hat{\theta}_\text{MAP} &amp;= \arg \max P(\theta | X) \\<br>&amp;= \arg \min -\log P(\theta | X) \\<br>&amp; = \arg \min -\log P(X|\theta) - \log P(\theta) + \log P(X) \\<br>&amp;= \arg \min -\log P(X|\theta ) - \log P(\theta)<br>\end{align</em>}$$</p>
+<p>$$\begin{align*}<br>\hat{\theta}_\text{MAP} &amp;= \arg \max P(\theta | X) \\<br>&amp;= \arg \min -\log P(\theta | X) \\<br>&amp; = \arg \min -\log P(X|\theta) - \log P(\theta) + \log P(X) \\<br>&amp;= \arg \min -\log P(X|\theta ) - \log P(\theta)<br>\end{align*}$$</p>
 <p>其中，第二行到第三行使用了贝叶斯定理，第三行到第四行 $P(X)$ 可以丢掉因为与 $\theta$ 无关。注意 $-\log P(X|\theta )$ 其实就是NLL，所以MLE和MAP在优化时的不同就是在于先验项 $- \log P(\theta)$ 。好的，那现在我们来研究一下这个先验项，假定先验是一个高斯分布，即</p>
 <p>$$P(\theta) = \text{constant} \times e^{-\frac{\theta^2}{2\sigma^2}}$$</p>
 <p>那么， $-\log P(\theta) = \text{constant} + \frac{\theta^2}{2\sigma^2}$ 。至此，一件神奇的事情发生了：</p>
