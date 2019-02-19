@@ -75,7 +75,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_consistent_undefined_write.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_defined_append.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_inconsistent_append.png">
-<meta property="og:updated_time" content="2019-02-18T15:09:07.891Z">
+<meta property="og:updated_time" content="2019-02-19T01:24:47.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式系统笔记(3)-GFS">
 <meta name="twitter:description" content="本系列文章是学习课程 6.824: Distributed Systems 时的一些学习笔记，整个课程的相关材料已整理至 DistributedSystemInGo。本文是 LEC3 的内容，介绍了分布式文件系统 GFS，GFS 为 MapReduce 提供了存储，同样是出自 Google，同样是年代久远，但是其中的一些设计思想同样值得我们参考。">
@@ -455,7 +455,7 @@
 <li>inconsistent：多副本数据不一致 </li>
 <li>undefined：数据未定义</li>
 </ul>
-<p>下面主要以几个介绍上面的状态，这部分内容主要摘自<a href="https://zhuanlan.zhihu.com/p/28155582" target="_blank" rel="external">这里</a></p>
+<p>下面分别以几个案例介绍上面的状态，这部分内容主要摘自<a href="https://zhuanlan.zhihu.com/p/28155582" target="_blank" rel="external">这里</a></p>
 <p><strong>serial write</strong></p>
 <p>当 client 串行更新时时，客户端自己知道写入文件范围以及写入数据内容，且本次写入在数据服务器的多副本上均执行成功。因此，本次写结果对于客户端来说就是明确的，且多副本上数据一致，故而结果是 <strong>defined</strong>。如下图：</p>
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_defined_write.png" alt="gfs-defined"></p>
@@ -470,13 +470,13 @@
 <p>假设上面的append经历了一次重试，那可能实际chunk的布局如下</p>
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_inconsistent_append.png" alt="inconsistent append"></p>
 <p>由于第一次写失败（错误可能发生在任意一个副本），导致了多副本之间从50至80的数据可能不一致。但接下来重试成功，从80至110之间的数据一致，因此，其状态是 <strong>interspersed with inconsistent</strong>。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本文主要介绍了 GFS 的适用场景、系统架构、读写过程以及 fault tolerance 的一些措施，GFS 可以说是为 MapReduce 量身定做的文件系统: 大文件、文件写入后基本不修改、更着重吞吐量等，也<a href="https://zhuanlan.zhihu.com/p/36752400" target="_blank" rel="external">有人说</a>认为 GFS 也就没有 MapReduce 了，其实与其说 MapReduce 多么牛，不如说是GFS牛，因为 MapReduce 模型早就是数据库领域几十年前玩剩下的了, 但是只有 Google 做出了那种廉价高效的分布式系，主要是因为 Google 的下层的支持系统也就是 GFS 做得好。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本文主要介绍了 GFS 的适用场景、系统架构、读写过程以及 一致性的保证，GFS 可以说是为 MapReduce 量身定做的文件系统: 大文件、文件写入后基本不修改、更着重吞吐量等，也<a href="https://zhuanlan.zhihu.com/p/36752400" target="_blank" rel="external">有人说</a>认为 GFS 也就没有 MapReduce 了，其实与其说 MapReduce 多么牛，不如说是GFS牛，因为 MapReduce 模型早就是数据库领域几十年前玩剩下的了, 但是只有 Google 做出了那种廉价高效的分布式系，主要是因为 Google 的下层的支持系统也就是 GFS 做得好。</p>
 <hr>
 <p>参考 </p>
 <ul>
 <li><a href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/035fc972c796d33122033a0614bc94cff1527999.pdf" target="_blank" rel="external">The Google File System</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/28155582" target="_blank" rel="external">Google File System</a></li>
-<li><a href="https://www.zhihu.com/search?q=GFS%20append&amp;type=content" target="_blank" rel="external">Paper Reading: GFS</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/36752400" target="_blank" rel="external">Paper Reading: GFS</a></li>
 </ul>
 
       
