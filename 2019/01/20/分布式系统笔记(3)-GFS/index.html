@@ -75,7 +75,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_consistent_undefined_write.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_defined_append.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_inconsistent_append.png">
-<meta property="og:updated_time" content="2019-02-19T01:24:47.013Z">
+<meta property="og:updated_time" content="2019-02-19T02:16:30.032Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式系统笔记(3)-GFS">
 <meta name="twitter:description" content="本系列文章是学习课程 6.824: Distributed Systems 时的一些学习笔记，整个课程的相关材料已整理至 DistributedSystemInGo。本文是 LEC3 的内容，介绍了分布式文件系统 GFS，GFS 为 MapReduce 提供了存储，同样是出自 Google，同样是年代久远，但是其中的一些设计思想同样值得我们参考。">
@@ -380,7 +380,7 @@
 <h3 id="chunk"><a href="#chunk" class="headerlink" title="chunk"></a>chunk</h3><p>每个大文都件被划分为若干个固定大小的 chunk，每个 chunk 在创建的时候都会被 master 赋予一个唯一的 ID，称为 chunk handle</p>
 <p>chunk 的大小理论上可为任意值，GFS 中为 64MB)，大的 chunk size 有以下优点与不足</p>
 <ul>
-<li>减少了 client 与 master 的通信次数，从而减少了 master 和 network 的负载；对于 sequential read，chunk size 越大，数据在同一个 chunk 上的概率就越大，因此</li>
+<li>减少了 client 与 master 的通信次数，从而减少了 master 和 network 的负载；对于 sequential read，chunk size 越大，数据在同一个 chunk 上的概率就越大，因此避免了读取多个 chunk</li>
 <li>减少 master 存储的 metadata 的大小，因为 chunk size 越大，chunk 的数量就越小</li>
 <li>可能会浪费空间，如一个 65MB 的文件会被分成两个 chunk，但是第二个 chunk 只有 1MB 的数据却占了 64MB 的大小</li>
 <li>可能会导致 load imbalance，如一个小文件只有一个 chunk，因此存储这些 chunk 的 chunkserver 会成为 hot spot；但是在文章提到的应用中，hot spot 并不是一个大问题，因为文章内的应用应用场景是 read large multi-chunk files sequentially</li>
@@ -450,8 +450,8 @@
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_consistent_state.png" alt="consistent state"></p>
 <p>上图中的四种状态含义如下</p>
 <ul>
-<li>defined：从客户端角度来看，客户端完全了解已写入集群的数据的 offset ，例如，客户端串行写入且成功（serial success），此时的状态是defined</li>
-<li>consistent：客户端角度来看，chunk 多副本的数据完全一致，但不一定 defined</li>
+<li>defined：从客户端角度来看，客户端完全了解已写入集群的数据的 offset，例如，客户端串行写入且成功（serial success），此时的状态是defined</li>
+<li>consistent：客户端角度来看，chunk 多副本的数据完全一致，但不一定 defined(defined 包含了 consistent)</li>
 <li>inconsistent：多副本数据不一致 </li>
 <li>undefined：数据未定义</li>
 </ul>
@@ -462,8 +462,11 @@
 <p><strong>concurrent write</strong></p>
 <p>多个 client 同时写入时, 由于多个客户端由于<strong>写入范围可能交叉而形成交织写</strong>。这时候，由于单个客户端无法决定写入顺序（只有 primary 才能决定谁先写谁后写），因此，即使写入成功，客户端仍无法确定在并发写入时交叉部分最终写入结果，但是因为写入成功，所以多副本数据必然一致， 如下图所示</p>
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_consistent_undefined_write.png" alt="consistent_undefined"></p>
-<p>图中红色部分代表并发追加的部分，这部分数据由于无法确定谁先谁后执行，因此结果不确定。但由于跟新成功，因此，副本间数据是一致的，这就是<strong>consistent but undefined</strong>。</p>
-<p>而无论是 serial write 还是并行 concurrent write，一旦失败，多个chunk副本上的数据可能都不一致了，其次，客户端从不同的副本上读出的数据也不一样（可能某些副本成功而某些副本失败），因此，必然也是undefined，也是inconsistent。</p>
+<p>图中红色部分代表并发追加的部分，这部分数据由于无法确定谁先谁后执行，因此结果不确定；但由于跟新成功，因此，副本间数据是一致的，这就是<strong>consistent but undefined</strong>。需要注意的是，consistent but undefined 只会出现在<strong>原始的write操作被划分为几个子操作时</strong>，原文解析如下</p>
+<blockquote>
+<p>If a write by the application is large or straddles a chunk boundary, GFS client code breaks it down into multiple write operations. They all follow the control flow described above but may be interleaved with and overwritten by concurrent operations from other clients. Therefore, the shared file region may end up containing fragments from different clients, although the replicas will be identical because the individual operations are completed successfully in the same order on all replicas. This leaves the file region in consistent but undefined state as noted in Section 2.7.</p>
+</blockquote>
+<p>而无论是 serial write 还是并行 concurrent write，一旦失败，多个 chunk 副本上的数据可能都不一致了，因此便是 inconsistent，必然也是undefined。</p>
 <p><strong>append</strong></p>
 <p>上面提到，client 的 append 操作无需指定offset，由 chunk 的 primary 根据当前文件大小决定写入offset，在写入成功后将该offset返回给客户端。因此，<strong>客户端能够根据offset 确切知道写入结果，无论是串行写入还是并发写入，其行为是defined</strong>。如下所示</p>
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkDownImages/master/gfs_defined_append.png" alt="defined append"></p>
