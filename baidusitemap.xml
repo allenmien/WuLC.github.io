@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2019/04/20/Markdown%20%E5%9B%BE%E7%89%87%E5%85%8D%E8%B4%B9%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-04-23T08:23:05.864Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown 图片免费上传工具</title>
+        <pubTime>2019-04-20T01:35:52.000Z</pubTime>
+        
+        <tag>工具使用</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2019/04/19/%E9%80%9A%E8%BF%87%20Flask,%20Docker,%20Jenkins%20%E5%92%8C%20Kubernets%20%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2019-04-21T00:53:58.708Z</lastmod>
     <data>
@@ -487,9 +507,9 @@
         
         <tag>python</tag>
          
-        <tag>动态规划</tag>
-         
         <tag>栈</tag>
+         
+        <tag>动态规划</tag>
          
          
            
@@ -1219,6 +1239,26 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2017/04/10/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.239Z</lastmod>
+    <data>
+        <display>
+        <title>遗传算法简介</title>
+        <pubTime>2017-04-10T12:08:55.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2017/07/14/%E9%9A%90%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%89%E5%A4%A7%E9%97%AE%E9%A2%98%E5%8F%8A%E6%B1%82%E8%A7%A3%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2018-12-21T11:53:29.239Z</lastmod>
     <data>
@@ -1234,26 +1274,6 @@
            
              
               <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/04/10/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.239Z</lastmod>
-    <data>
-        <display>
-        <title>遗传算法简介</title>
-        <pubTime>2017-04-10T12:08:55.000Z</pubTime>
-        
-        <tag>数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
           
         </display>
     </data>
@@ -1286,26 +1306,19 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/02/08/%E8%AF%A6%E8%A7%A3Java%E7%9A%84TCP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>http://wulc.github.io/2016/12/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93--%E7%BB%84%E6%92%AD%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2018-12-21T11:53:29.231Z</lastmod>
     <data>
         <display>
-        <title>详解Java的TCP网络编程</title>
-        <pubTime>2016-02-08T13:37:39.000Z</pubTime>
+        <title>计算机网络课程总结--组播基础</title>
+        <pubTime>2016-12-20T13:37:39.000Z</pubTime>
         
-        <tag>转载</tag>
-         
         <tag>计算机网络</tag>
-         
-        <tag>Java</tag>
          
          
            
              
-              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
-          
-             
-              <breadCrumb title="网络编程" url="http://wulc.github.io/categories/Java/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
           
         </display>
     </data>
@@ -1313,14 +1326,18 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/08/08/%E9%80%9A%E8%BF%87%20sklearn%20%E8%BF%9B%E8%A1%8C%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://wulc.github.io/2018/01/15/%E9%80%9A%E8%BF%87%20word2vec%20%E4%B8%8E%20CNN-RNN%20%E5%AF%B9%E5%8A%A8%E4%BD%9C%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1/</loc>
     <lastmod>2018-12-21T11:53:29.231Z</lastmod>
     <data>
         <display>
-        <title>通过 sklearn 进行大规模机器学习</title>
-        <pubTime>2017-08-08T12:08:55.000Z</pubTime>
+        <title>通过 word2vec 与 CNN/RNN 对动作序列建模</title>
+        <pubTime>2018-01-15T13:37:39.000Z</pubTime>
         
         <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
+         
+        <tag>NLP</tag>
          
          
            
@@ -1377,24 +1394,26 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/06/04/%E8%AE%BE%E8%AE%A1%E5%B9%B6%E8%A1%8C%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://wulc.github.io/2016/02/08/%E8%AF%A6%E8%A7%A3Java%E7%9A%84TCP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2018-12-21T11:53:29.231Z</lastmod>
     <data>
         <display>
-        <title>并行算法的设计</title>
-        <pubTime>2016-06-04T14:21:25.000Z</pubTime>
+        <title>详解Java的TCP网络编程</title>
+        <pubTime>2016-02-08T13:37:39.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>转载</tag>
          
-        <tag>操作系统</tag>
+        <tag>计算机网络</tag>
+         
+        <tag>Java</tag>
          
          
            
              
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
           
              
-              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
+              <breadCrumb title="网络编程" url="http://wulc.github.io/categories/Java/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -1402,63 +1421,19 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/01/15/%E9%80%9A%E8%BF%87%20word2vec%20%E4%B8%8E%20CNN-RNN%20%E5%AF%B9%E5%8A%A8%E4%BD%9C%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1/</loc>
+    <loc>http://wulc.github.io/2017/08/08/%E9%80%9A%E8%BF%87%20sklearn%20%E8%BF%9B%E8%A1%8C%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2018-12-21T11:53:29.231Z</lastmod>
     <data>
         <display>
-        <title>通过 word2vec 与 CNN/RNN 对动作序列建模</title>
-        <pubTime>2018-01-15T13:37:39.000Z</pubTime>
+        <title>通过 sklearn 进行大规模机器学习</title>
+        <pubTime>2017-08-08T12:08:55.000Z</pubTime>
         
         <tag>机器学习</tag>
-         
-        <tag>深度学习</tag>
-         
-        <tag>NLP</tag>
          
          
            
              
               <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/12/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93--IPV6/</loc>
-    <lastmod>2018-12-21T11:53:29.231Z</lastmod>
-    <data>
-        <display>
-        <title>计算机网络课程总结--IPV6</title>
-        <pubTime>2016-12-26T13:37:39.000Z</pubTime>
-        
-        <tag>计算机网络</tag>
-         
-         
-           
-             
-              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/12/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93--%E7%BB%84%E6%92%AD%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2018-12-21T11:53:29.231Z</lastmod>
-    <data>
-        <display>
-        <title>计算机网络课程总结--组播基础</title>
-        <pubTime>2016-12-20T13:37:39.000Z</pubTime>
-        
-        <tag>计算机网络</tag>
-         
-         
-           
-             
-              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
           
         </display>
     </data>
@@ -1486,12 +1461,57 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/06/04/%E8%AE%BE%E8%AE%A1%E5%B9%B6%E8%A1%8C%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2018-12-21T11:53:29.231Z</lastmod>
+    <data>
+        <display>
+        <title>并行算法的设计</title>
+        <pubTime>2016-06-04T14:21:25.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>操作系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2016/12/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93--BGP%E5%8D%8F%E8%AE%AE/</loc>
     <lastmod>2018-12-21T11:53:29.231Z</lastmod>
     <data>
         <display>
         <title>计算机网络课程总结--BGP协议</title>
         <pubTime>2016-12-25T13:37:39.000Z</pubTime>
+        
+        <tag>计算机网络</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/12/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93--IPV6/</loc>
+    <lastmod>2018-12-21T11:53:29.231Z</lastmod>
+    <data>
+        <display>
+        <title>计算机网络课程总结--IPV6</title>
+        <pubTime>2016-12-26T13:37:39.000Z</pubTime>
         
         <tag>计算机网络</tag>
          
@@ -1528,12 +1548,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/05/07/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%E7%AC%94%E8%AE%B0(4)--%E7%AB%9E%E4%BB%B7%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>http://wulc.github.io/2017/05/14/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%E7%AC%94%E8%AE%B0(6)--%E5%B9%BF%E5%91%8A%E4%BA%A4%E6%98%93%E5%B8%82%E5%9C%BA(Ad%20Exchange)/</loc>
     <lastmod>2018-12-21T11:53:29.229Z</lastmod>
     <data>
         <display>
-        <title>计算广告笔记(4)--竞价广告系统</title>
-        <pubTime>2017-05-07T13:37:39.000Z</pubTime>
+        <title>计算广告(6)--广告交易市场(Ad Exchange)</title>
+        <pubTime>2017-05-14T13:37:39.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -1550,12 +1570,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/05/14/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%E7%AC%94%E8%AE%B0(6)--%E5%B9%BF%E5%91%8A%E4%BA%A4%E6%98%93%E5%B8%82%E5%9C%BA(Ad%20Exchange)/</loc>
+    <loc>http://wulc.github.io/2017/05/07/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%E7%AC%94%E8%AE%B0(4)--%E7%AB%9E%E4%BB%B7%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2018-12-21T11:53:29.229Z</lastmod>
     <data>
         <display>
-        <title>计算广告(6)--广告交易市场(Ad Exchange)</title>
-        <pubTime>2017-05-14T13:37:39.000Z</pubTime>
+        <title>计算广告笔记(4)--竞价广告系统</title>
+        <pubTime>2017-05-07T13:37:39.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -1682,50 +1702,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/01/06/%E7%89%A9%E7%90%86CPU%E3%80%81CPU%E6%A0%B8%E6%95%B0%E3%80%81%E9%80%BB%E8%BE%91CPU%E3%80%81%E8%B6%85%E7%BA%BF%E7%A8%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
-    <data>
-        <display>
-        <title>物理CPU、CPU核数、逻辑CPU、超线程</title>
-        <pubTime>2016-01-06T12:08:55.000Z</pubTime>
-        
-        <tag>操作系统</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="操作系统" url="http://wulc.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/01/17/%E7%82%92%E8%82%A1%E6%8D%9F%E5%A4%B1%E7%9A%84%E4%B8%8D%E4%BB%85%E6%98%AF%E9%92%B1-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B7%E8%BF%9C%E7%A6%BB%E8%82%A1%E5%B8%82/</loc>
-    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
-    <data>
-        <display>
-        <title>炒股损失的不仅是钱,年轻人请远离股市</title>
-        <pubTime>2016-01-17T01:17:53.000Z</pubTime>
-        
-        <tag>转载</tag>
-         
-        <tag>闲话几句</tag>
-         
-         
-           
-             
-              <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2016/07/05/%E7%88%AC%E8%99%AB%E4%BB%A3%E7%90%86IP%E7%9A%84%E8%8E%B7%E5%8F%96/</loc>
     <lastmod>2018-12-21T11:53:29.221Z</lastmod>
     <data>
@@ -1744,6 +1720,28 @@
           
              
               <breadCrumb title="爬虫" url="http://wulc.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/01/06/%E7%89%A9%E7%90%86CPU%E3%80%81CPU%E6%A0%B8%E6%95%B0%E3%80%81%E9%80%BB%E8%BE%91CPU%E3%80%81%E8%B6%85%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
+    <data>
+        <display>
+        <title>物理CPU、CPU核数、逻辑CPU、超线程</title>
+        <pubTime>2016-01-06T12:08:55.000Z</pubTime>
+        
+        <tag>操作系统</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="操作系统" url="http://wulc.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
           
         </display>
     </data>
@@ -1773,14 +1771,18 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/02/12/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</loc>
+    <loc>http://wulc.github.io/2015/12/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
     <lastmod>2018-12-21T11:53:29.221Z</lastmod>
     <data>
         <display>
-        <title>浏览器缓存机制</title>
-        <pubTime>2016-02-12T13:47:59.000Z</pubTime>
+        <title>深度优先搜索和广度优先搜索</title>
+        <pubTime>2015-12-03T09:25:30.000Z</pubTime>
         
-        <tag>web</tag>
+        <tag>图</tag>
+         
+        <tag>深度优先搜索</tag>
+         
+        <tag>广度优先搜索</tag>
          
          
            
@@ -1813,6 +1815,48 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/01/17/%E7%82%92%E8%82%A1%E6%8D%9F%E5%A4%B1%E7%9A%84%E4%B8%8D%E4%BB%85%E6%98%AF%E9%92%B1-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B7%E8%BF%9C%E7%A6%BB%E8%82%A1%E5%B8%82/</loc>
+    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
+    <data>
+        <display>
+        <title>炒股损失的不仅是钱,年轻人请远离股市</title>
+        <pubTime>2016-01-17T01:17:53.000Z</pubTime>
+        
+        <tag>转载</tag>
+         
+        <tag>闲话几句</tag>
+         
+         
+           
+             
+              <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/02/12/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</loc>
+    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
+    <data>
+        <display>
+        <title>浏览器缓存机制</title>
+        <pubTime>2016-02-12T13:47:59.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2016/11/18/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86(5)--%E6%A0%B7%E6%9C%AC%E5%8F%8A%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/</loc>
     <lastmod>2018-12-21T11:53:29.221Z</lastmod>
     <data>
@@ -1826,30 +1870,6 @@
            
              
               <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2015/12/03/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
-    <lastmod>2018-12-21T11:53:29.221Z</lastmod>
-    <data>
-        <display>
-        <title>深度优先搜索和广度优先搜索</title>
-        <pubTime>2015-12-03T09:25:30.000Z</pubTime>
-        
-        <tag>图</tag>
-         
-        <tag>深度优先搜索</tag>
-         
-        <tag>广度优先搜索</tag>
-         
-         
-           
-             
-              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
           
         </display>
     </data>
@@ -1959,19 +1979,19 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/02/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%86%E7%B1%BB/</loc>
+    <loc>http://wulc.github.io/2017/02/01/%E6%9C%80%E4%BC%98%E5%8C%96%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2018-12-21T11:53:29.211Z</lastmod>
     <data>
         <display>
-        <title>机器学习基石--机器学习的分类</title>
-        <pubTime>2017-02-26T12:08:55.000Z</pubTime>
+        <title>最优化计算课程总结</title>
+        <pubTime>2017-02-01T12:08:55.000Z</pubTime>
         
-        <tag>机器学习</tag>
+        <tag>数学</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
           
         </display>
     </data>
@@ -2001,12 +2021,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/02/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/</loc>
+    <loc>http://wulc.github.io/2017/02/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%86%E7%B1%BB/</loc>
     <lastmod>2018-12-21T11:53:29.211Z</lastmod>
     <data>
         <display>
-        <title>机器学习基石--学习的可行性</title>
-        <pubTime>2017-02-28T12:08:55.000Z</pubTime>
+        <title>机器学习基石--机器学习的分类</title>
+        <pubTime>2017-02-26T12:08:55.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2021,12 +2041,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/02/25/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--PLA/</loc>
+    <loc>http://wulc.github.io/2017/02/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2018-12-21T11:53:29.211Z</lastmod>
     <data>
         <display>
-        <title>机器学习基石--PLA</title>
-        <pubTime>2017-02-25T12:08:55.000Z</pubTime>
+        <title>机器学习基石--学习的可行性</title>
+        <pubTime>2017-02-28T12:08:55.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2061,12 +2081,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/07/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E6%A0%B7%E6%9C%AC%E6%AF%94%E4%BE%8B%E4%B8%8D%E5%B9%B3%E8%A1%A1%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://wulc.github.io/2017/02/25/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%9F%B3--PLA/</loc>
     <lastmod>2018-12-21T11:53:29.211Z</lastmod>
     <data>
         <display>
-        <title>机器学习中样本比例不平衡的处理方法</title>
-        <pubTime>2017-07-06T12:08:55.000Z</pubTime>
+        <title>机器学习基石--PLA</title>
+        <pubTime>2017-02-25T12:08:55.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2074,46 +2094,6 @@
            
              
               <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/02/01/%E6%9C%80%E4%BC%98%E5%8C%96%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-12-21T11:53:29.211Z</lastmod>
-    <data>
-        <display>
-        <title>最优化计算课程总结</title>
-        <pubTime>2017-02-01T12:08:55.000Z</pubTime>
-        
-        <tag>数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/06/16/%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E4%BA%A4%E6%98%93/</loc>
-    <lastmod>2018-12-21T11:53:29.211Z</lastmod>
-    <data>
-        <display>
-        <title>有价值的数据应该如何交易</title>
-        <pubTime>2017-06-16T13:37:39.000Z</pubTime>
-        
-        <tag>计算广告</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算广告" url="http://wulc.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
           
         </display>
     </data>
@@ -2141,26 +2121,39 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/03/27/%E6%90%9C%E7%8B%97%E3%80%81%E7%99%BE%E5%BA%A6%E3%80%81QQ%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E8%AF%8D%E5%BA%93%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2018-12-21T11:53:29.209Z</lastmod>
+    <loc>http://wulc.github.io/2017/07/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E6%A0%B7%E6%9C%AC%E6%AF%94%E4%BE%8B%E4%B8%8D%E5%B9%B3%E8%A1%A1%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-12-21T11:53:29.211Z</lastmod>
     <data>
         <display>
-        <title>搜狗、百度、QQ输入法的词库爬虫</title>
-        <pubTime>2016-03-27T03:08:18.000Z</pubTime>
+        <title>机器学习中样本比例不平衡的处理方法</title>
+        <pubTime>2017-07-06T12:08:55.000Z</pubTime>
         
-        <tag>python</tag>
-         
-        <tag>爬虫</tag>
-         
-        <tag>广度优先搜索</tag>
+        <tag>机器学习</tag>
          
          
            
              
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2017/06/16/%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E4%BA%A4%E6%98%93/</loc>
+    <lastmod>2018-12-21T11:53:29.211Z</lastmod>
+    <data>
+        <display>
+        <title>有价值的数据应该如何交易</title>
+        <pubTime>2017-06-16T13:37:39.000Z</pubTime>
+        
+        <tag>计算广告</tag>
+         
+         
+           
              
-              <breadCrumb title="爬虫" url="http://wulc.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
+              <breadCrumb title="计算广告" url="http://wulc.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
           
         </display>
     </data>
@@ -2203,6 +2196,33 @@
            
              
               <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/03/27/%E6%90%9C%E7%8B%97%E3%80%81%E7%99%BE%E5%BA%A6%E3%80%81QQ%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E8%AF%8D%E5%BA%93%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2018-12-21T11:53:29.209Z</lastmod>
+    <data>
+        <display>
+        <title>搜狗、百度、QQ输入法的词库爬虫</title>
+        <pubTime>2016-03-27T03:08:18.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>爬虫</tag>
+         
+        <tag>广度优先搜索</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="爬虫" url="http://wulc.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
           
         </display>
     </data>
@@ -2316,43 +2336,21 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/11/18/%E5%88%86%E6%89%B9%E8%AE%AD%E7%BB%83%E8%BF%87%E5%A4%A7%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86/</loc>
+    <loc>http://wulc.github.io/2018/02/24/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(4)-Implement%20Your%20MapReduce/</loc>
     <lastmod>2018-12-21T11:53:29.201Z</lastmod>
     <data>
         <display>
-        <title>分批训练过大的数据集</title>
-        <pubTime>2017-11-18T12:08:55.000Z</pubTime>
+        <title>分布式机器学习(4)-Implement Your MapReduce</title>
+        <pubTime>2018-02-24T04:00:37.000Z</pubTime>
         
         <tag>机器学习</tag>
          
-        <tag>深度学习</tag>
+        <tag>分布式</tag>
          
          
            
              
               <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2015/11/18/%E5%90%AC%E8%AF%B4%E4%BD%A0%E8%A7%89%E5%BE%97%E7%94%9F%E6%B4%BB%E5%BE%88%E6%97%A0%E8%81%8A/</loc>
-    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
-    <data>
-        <display>
-        <title>听说你觉得生活很无聊</title>
-        <pubTime>2015-11-18T14:00:40.000Z</pubTime>
-        
-        <tag>转载</tag>
-         
-        <tag>闲话几句</tag>
-         
-         
-           
-             
-              <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
           
         </display>
     </data>
@@ -2382,61 +2380,21 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/09/18/%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%20LaTeX%20%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://wulc.github.io/2015/11/18/%E5%90%AC%E8%AF%B4%E4%BD%A0%E8%A7%89%E5%BE%97%E7%94%9F%E6%B4%BB%E5%BE%88%E6%97%A0%E8%81%8A/</loc>
     <lastmod>2018-12-21T11:53:29.201Z</lastmod>
     <data>
         <display>
-        <title>常用数学符号的 LaTeX 表示方法</title>
-        <pubTime>2016-09-18T08:41:06.000Z</pubTime>
+        <title>听说你觉得生活很无聊</title>
+        <pubTime>2015-11-18T14:00:40.000Z</pubTime>
         
-        <tag>工具使用</tag>
+        <tag>转载</tag>
+         
+        <tag>闲话几句</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/06/18/%E5%A6%82%E4%BD%95%E7%94%A8%E6%95%B0%E6%8D%AE%E6%AD%A6%E8%A3%85%E8%BF%90%E8%90%A5%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
-    <data>
-        <display>
-        <title>如何用数据武装运营工作</title>
-        <pubTime>2017-06-18T13:37:39.000Z</pubTime>
-        
-        <tag>计算广告</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算广告" url="http://wulc.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2018/02/24/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(4)-Implement%20Your%20MapReduce/</loc>
-    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
-    <data>
-        <display>
-        <title>分布式机器学习(4)-Implement Your MapReduce</title>
-        <pubTime>2018-02-24T04:00:37.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-        <tag>分布式</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
           
         </display>
     </data>
@@ -2488,6 +2446,26 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/09/18/%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%20LaTeX%20%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
+    <data>
+        <display>
+        <title>常用数学符号的 LaTeX 表示方法</title>
+        <pubTime>2016-09-18T08:41:06.000Z</pubTime>
+        
+        <tag>工具使用</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2017/06/05/%E5%A6%82%E4%BD%95%E7%94%A8%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%8C%A3%E9%92%B1/</loc>
     <lastmod>2018-12-21T11:53:29.201Z</lastmod>
     <data>
@@ -2528,6 +2506,48 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2017/11/18/%E5%88%86%E6%89%B9%E8%AE%AD%E7%BB%83%E8%BF%87%E5%A4%A7%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86/</loc>
+    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
+    <data>
+        <display>
+        <title>分批训练过大的数据集</title>
+        <pubTime>2017-11-18T12:08:55.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>深度学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2017/06/18/%E5%A6%82%E4%BD%95%E7%94%A8%E6%95%B0%E6%8D%AE%E6%AD%A6%E8%A3%85%E8%BF%90%E8%90%A5%E5%B7%A5%E4%BD%9C/</loc>
+    <lastmod>2018-12-21T11:53:29.201Z</lastmod>
+    <data>
+        <display>
+        <title>如何用数据武装运营工作</title>
+        <pubTime>2017-06-18T13:37:39.000Z</pubTime>
+        
+        <tag>计算广告</tag>
+         
+         
+           
+             
+              <breadCrumb title="计算广告" url="http://wulc.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2017/05/20/%E5%87%B8%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2018-12-21T11:53:29.199Z</lastmod>
     <data>
@@ -2548,12 +2568,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/02/08/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(1)-A%20New%20Era/</loc>
+    <loc>http://wulc.github.io/2018/02/11/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(2)-Infrequent%20Pattern%20Mining%20using%20MapReduce/</loc>
     <lastmod>2018-12-21T11:53:29.199Z</lastmod>
     <data>
         <display>
-        <title>分布式机器学习(1)-A New Era</title>
-        <pubTime>2018-02-08T14:31:17.000Z</pubTime>
+        <title>分布式机器学习(2)-Infrequent Pattern Mining using MapReduce</title>
+        <pubTime>2018-02-11T04:00:37.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2570,12 +2590,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/02/11/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(2)-Infrequent%20Pattern%20Mining%20using%20MapReduce/</loc>
+    <loc>http://wulc.github.io/2018/02/08/%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0(1)-A%20New%20Era/</loc>
     <lastmod>2018-12-21T11:53:29.199Z</lastmod>
     <data>
         <display>
-        <title>分布式机器学习(2)-Infrequent Pattern Mining using MapReduce</title>
-        <pubTime>2018-02-11T04:00:37.000Z</pubTime>
+        <title>分布式机器学习(1)-A New Era</title>
+        <pubTime>2018-02-08T14:31:17.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2607,66 +2627,6 @@
            
              
               <breadCrumb title="闲话几句" url="http://wulc.github.io/categories/%E9%97%B2%E8%AF%9D%E5%87%A0%E5%8F%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2018/03/31/%E5%85%B1%E4%BA%AB%E9%94%AE%E9%BC%A0%E7%A5%9E%E5%99%A8%20Synergy/</loc>
-    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
-    <data>
-        <display>
-        <title>共享键鼠神器 Synergy</title>
-        <pubTime>2018-03-31T14:21:25.000Z</pubTime>
-        
-        <tag>工具使用</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/01/03/%E4%BD%BF%E7%94%A8sklearn%E5%81%9A%E5%8D%95%E6%9C%BA%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
-    <data>
-        <display>
-        <title>使用sklearn做单机特征工程</title>
-        <pubTime>2017-01-03T12:15:44.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2017/01/08/%E5%85%88%E9%AA%8C%E6%A6%82%E7%8E%87%EF%BC%8C%E5%90%8E%E9%AA%8C%E6%A6%82%E7%8E%87%EF%BC%8C%E5%85%B1%E8%BD%AD%E5%88%86%E5%B8%83%E4%B8%8E%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</loc>
-    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
-    <data>
-        <display>
-        <title>先验概率，后验概率，共轭分布与共轭先验</title>
-        <pubTime>2017-01-08T12:08:55.000Z</pubTime>
-        
-        <tag>数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
           
         </display>
     </data>
@@ -2716,14 +2676,74 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/05/28/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E7%9A%84%E7%A0%94%E7%A9%B6/</loc>
+    <loc>http://wulc.github.io/2018/03/31/%E5%85%B1%E4%BA%AB%E9%94%AE%E9%BC%A0%E7%A5%9E%E5%99%A8%20Synergy/</loc>
     <lastmod>2018-12-21T11:53:29.191Z</lastmod>
     <data>
         <display>
-        <title>关键词抽取算法的研究</title>
-        <pubTime>2016-05-28T14:31:17.000Z</pubTime>
+        <title>共享键鼠神器 Synergy</title>
+        <pubTime>2018-03-31T14:21:25.000Z</pubTime>
         
-        <tag>Java</tag>
+        <tag>工具使用</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2017/01/08/%E5%85%88%E9%AA%8C%E6%A6%82%E7%8E%87%EF%BC%8C%E5%90%8E%E9%AA%8C%E6%A6%82%E7%8E%87%EF%BC%8C%E5%85%B1%E8%BD%AD%E5%88%86%E5%B8%83%E4%B8%8E%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</loc>
+    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
+    <data>
+        <display>
+        <title>先验概率，后验概率，共轭分布与共轭先验</title>
+        <pubTime>2017-01-08T12:08:55.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://wulc.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2017/01/03/%E4%BD%BF%E7%94%A8sklearn%E5%81%9A%E5%8D%95%E6%9C%BA%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
+    <data>
+        <display>
+        <title>使用sklearn做单机特征工程</title>
+        <pubTime>2017-01-03T12:15:44.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/10/12/%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E8%AF%8D%E5%90%91%E9%87%8F%E7%9A%84%E8%AE%AD%E7%BB%83/</loc>
+    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
+    <data>
+        <display>
+        <title>中文维基百科语料库词向量的训练</title>
+        <pubTime>2016-10-12T14:31:17.000Z</pubTime>
+        
+        <tag>python</tag>
          
         <tag>NLP</tag>
          
@@ -2780,6 +2800,26 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/01/04/%E4%BB%80%E4%B9%88%E6%89%8D%E7%AE%97%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9F/</loc>
+    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
+    <data>
+        <display>
+        <title>什么才算是真正的编程能力？</title>
+        <pubTime>2016-01-04T12:05:37.000Z</pubTime>
+        
+        <tag>编程</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2015/12/12/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9B%B8%E7%88%B1%E5%AE%B9%E6%98%93-%E7%9B%B8%E5%AE%88%E4%B8%8D%E6%98%93%EF%BC%9F/</loc>
     <lastmod>2018-12-21T11:53:29.191Z</lastmod>
     <data>
@@ -2802,14 +2842,14 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/10/12/%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E8%AF%8D%E5%90%91%E9%87%8F%E7%9A%84%E8%AE%AD%E7%BB%83/</loc>
+    <loc>http://wulc.github.io/2016/05/28/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E7%9A%84%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2018-12-21T11:53:29.191Z</lastmod>
     <data>
         <display>
-        <title>中文维基百科语料库词向量的训练</title>
-        <pubTime>2016-10-12T14:31:17.000Z</pubTime>
+        <title>关键词抽取算法的研究</title>
+        <pubTime>2016-05-28T14:31:17.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>Java</tag>
          
         <tag>NLP</tag>
          
@@ -2817,26 +2857,6 @@
            
              
               <breadCrumb title="NLP" url="http://wulc.github.io/categories/NLP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/01/04/%E4%BB%80%E4%B9%88%E6%89%8D%E7%AE%97%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9F/</loc>
-    <lastmod>2018-12-21T11:53:29.191Z</lastmod>
-    <data>
-        <display>
-        <title>什么才算是真正的编程能力？</title>
-        <pubTime>2016-01-04T12:05:37.000Z</pubTime>
-        
-        <tag>编程</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -2886,28 +2906,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/01/25/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(3)--%E8%81%9A%E7%B1%BB/</loc>
-    <lastmod>2018-12-21T11:53:29.188Z</lastmod>
-    <data>
-        <display>
-        <title>《Programming Collective Intelligence》读书笔记(3)--聚类</title>
-        <pubTime>2017-01-25T14:31:17.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-        <tag>集体智慧编程</tag>
-         
-         
-           
-             
-              <breadCrumb title="集体智慧编程" url="http://wulc.github.io/categories/%E9%9B%86%E4%BD%93%E6%99%BA%E6%85%A7%E7%BC%96%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2015/11/19/%E3%80%8APython%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2018-12-21T11:53:29.188Z</lastmod>
     <data>
@@ -2931,34 +2929,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/01/21/stacking%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3%E5%8F%8A%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</loc>
-    <lastmod>2018-12-21T11:53:29.181Z</lastmod>
+    <loc>http://wulc.github.io/2017/01/25/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(3)--%E8%81%9A%E7%B1%BB/</loc>
+    <lastmod>2018-12-21T11:53:29.188Z</lastmod>
     <data>
         <display>
-        <title>stacking 的基本思想及代码实现</title>
-        <pubTime>2018-01-21T13:53:19.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-        <tag>python</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/02/22/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(2)--%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4/</loc>
-    <lastmod>2018-12-21T11:53:29.181Z</lastmod>
-    <data>
-        <display>
-        <title>《Programming Collective Intelligence》读书笔记(2)--协同过滤</title>
-        <pubTime>2016-02-22T14:31:17.000Z</pubTime>
+        <title>《Programming Collective Intelligence》读书笔记(3)--聚类</title>
+        <pubTime>2017-01-25T14:31:17.000Z</pubTime>
         
         <tag>机器学习</tag>
          
@@ -2995,6 +2971,28 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/02/24/python%E8%BF%9E%E6%8E%A5mysql%E5%8F%8A%E5%85%B6%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
+    <lastmod>2018-12-21T11:53:29.181Z</lastmod>
+    <data>
+        <display>
+        <title>python连接mysql及其注意事项</title>
+        <pubTime>2016-02-24T14:36:59.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2015/12/01/vim%E4%B8%ADSuperTab%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2018-12-21T11:53:29.181Z</lastmod>
     <data>
@@ -3010,6 +3008,26 @@
            
              
               <breadCrumb title="Linux" url="http://wulc.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/01/22/%E3%80%8AAdvanced%20Web%20Metrics%20with%20Google%20Analytics%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/</loc>
+    <lastmod>2018-12-21T11:53:29.181Z</lastmod>
+    <data>
+        <display>
+        <title>《Advanced Web Metrics with Google Analytics》读书笔记(2)</title>
+        <pubTime>2016-01-22T01:42:43.000Z</pubTime>
+        
+        <tag>Google Analytics</tag>
+         
+         
+           
+             
+              <breadCrumb title="Google Analytics" url="http://wulc.github.io/categories/Google-Analytics/"/>
           
         </display>
     </data>
@@ -3079,19 +3097,19 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/01/22/%E3%80%8AAdvanced%20Web%20Metrics%20with%20Google%20Analytics%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/</loc>
+    <loc>http://wulc.github.io/2016/01/24/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(1)/</loc>
     <lastmod>2018-12-21T11:53:29.181Z</lastmod>
     <data>
         <display>
-        <title>《Advanced Web Metrics with Google Analytics》读书笔记(2)</title>
-        <pubTime>2016-01-22T01:42:43.000Z</pubTime>
+        <title>《Programming Collective Intelligence》读书笔记(1)--梗概</title>
+        <pubTime>2016-01-24T01:39:26.000Z</pubTime>
         
-        <tag>Google Analytics</tag>
+        <tag>集体智慧编程</tag>
          
          
            
              
-              <breadCrumb title="Google Analytics" url="http://wulc.github.io/categories/Google-Analytics/"/>
+              <breadCrumb title="集体智慧编程" url="http://wulc.github.io/categories/%E9%9B%86%E4%BD%93%E6%99%BA%E6%85%A7%E7%BC%96%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -3119,13 +3137,15 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/01/24/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(1)/</loc>
+    <loc>http://wulc.github.io/2016/02/22/%E3%80%8AProgramming%20Collective%20Intelligence%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0(2)--%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4/</loc>
     <lastmod>2018-12-21T11:53:29.181Z</lastmod>
     <data>
         <display>
-        <title>《Programming Collective Intelligence》读书笔记(1)--梗概</title>
-        <pubTime>2016-01-24T01:39:26.000Z</pubTime>
+        <title>《Programming Collective Intelligence》读书笔记(2)--协同过滤</title>
+        <pubTime>2016-02-22T14:31:17.000Z</pubTime>
         
+        <tag>机器学习</tag>
+         
         <tag>集体智慧编程</tag>
          
          
@@ -3139,43 +3159,21 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/02/24/python%E8%BF%9E%E6%8E%A5mysql%E5%8F%8A%E5%85%B6%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
+    <loc>http://wulc.github.io/2018/01/21/stacking%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3%E5%8F%8A%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2018-12-21T11:53:29.181Z</lastmod>
     <data>
         <display>
-        <title>python连接mysql及其注意事项</title>
-        <pubTime>2016-02-24T14:36:59.000Z</pubTime>
+        <title>stacking 的基本思想及代码实现</title>
+        <pubTime>2018-01-21T13:53:19.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>机器学习</tag>
          
-        <tag>数据库</tag>
+        <tag>python</tag>
          
          
            
              
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/06/03/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.179Z</lastmod>
-    <data>
-        <display>
-        <title>python网络编程</title>
-        <pubTime>2016-06-03T13:44:10.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>计算机网络</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -3201,6 +3199,28 @@
           
              
               <breadCrumb title="爬虫" url="http://wulc.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/06/03/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.179Z</lastmod>
+    <data>
+        <display>
+        <title>python网络编程</title>
+        <pubTime>2016-06-03T13:44:10.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>计算机网络</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
           
         </display>
     </data>
@@ -3279,29 +3299,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/06/03/format%20%E5%87%BD%E6%95%B0%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
-    <data>
-        <display>
-        <title>format 函数常用语法</title>
-        <pubTime>2018-06-03T04:00:37.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
-          
-             
-              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2016/05/29/python%20%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B%E6%A6%82%E8%BF%B0/</loc>
     <lastmod>2018-12-21T11:53:29.171Z</lastmod>
     <data>
@@ -3327,16 +3324,14 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2015/12/15/python%E4%B8%AD%E7%9A%84%E5%A4%9A%E8%BF%9B%E7%A8%8B/</loc>
+    <loc>http://wulc.github.io/2017/08/28/python%20%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E7%BC%96%E7%A0%81/</loc>
     <lastmod>2018-12-21T11:53:29.171Z</lastmod>
     <data>
         <display>
-        <title>python中的多进程</title>
-        <pubTime>2015-12-15T08:26:21.000Z</pubTime>
+        <title>python 中的字符串与编码</title>
+        <pubTime>2017-08-28T04:00:37.000Z</pubTime>
         
         <tag>python</tag>
-         
-        <tag>操作系统</tag>
          
          
            
@@ -3344,7 +3339,7 @@
               <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
           
              
-              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
+              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
           
         </display>
     </data>
@@ -3394,60 +3389,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/03/26/python%E4%B8%AD%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>http://wulc.github.io/2018/06/03/format%20%E5%87%BD%E6%95%B0%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2018-12-21T11:53:29.171Z</lastmod>
     <data>
         <display>
-        <title>python中的多线程</title>
-        <pubTime>2016-03-26T14:21:25.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>操作系统</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
-          
-             
-              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2018/12/15/python%20%E8%AF%AD%E6%B3%95%E6%9D%82%E8%AE%B0--%E8%A3%85%E9%A5%B0%E5%99%A8%EF%BC%8C%E7%B1%BB%E7%9A%84%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%EF%BC%8C%E5%B8%B8%E9%87%8F%E7%B1%BB/</loc>
-    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
-    <data>
-        <display>
-        <title>python 语法杂记--装饰器，类的特殊方法，常量类</title>
-        <pubTime>2018-12-15T04:00:37.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
-          
-             
-              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/05/23/python%20%E8%AF%AD%E6%B3%95%E6%9D%82%E8%AE%B0/</loc>
-    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
-    <data>
-        <display>
-        <title>Python语法杂记</title>
-        <pubTime>2016-05-23T04:00:37.000Z</pubTime>
+        <title>format 函数常用语法</title>
+        <pubTime>2018-06-03T04:00:37.000Z</pubTime>
         
         <tag>python</tag>
          
@@ -3511,6 +3458,102 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2016/03/26/python%E4%B8%AD%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
+    <data>
+        <display>
+        <title>python中的多线程</title>
+        <pubTime>2016-03-26T14:21:25.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>操作系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/05/23/python%20%E8%AF%AD%E6%B3%95%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
+    <data>
+        <display>
+        <title>Python语法杂记</title>
+        <pubTime>2016-05-23T04:00:37.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2015/12/15/python%E4%B8%AD%E7%9A%84%E5%A4%9A%E8%BF%9B%E7%A8%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
+    <data>
+        <display>
+        <title>python中的多进程</title>
+        <pubTime>2015-12-15T08:26:21.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>操作系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="并行编程" url="http://wulc.github.io/categories/python/%E5%B9%B6%E8%A1%8C%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2018/12/15/python%20%E8%AF%AD%E6%B3%95%E6%9D%82%E8%AE%B0--%E8%A3%85%E9%A5%B0%E5%99%A8%EF%BC%8C%E7%B1%BB%E7%9A%84%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%EF%BC%8C%E5%B8%B8%E9%87%8F%E7%B1%BB/</loc>
+    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
+    <data>
+        <display>
+        <title>python 语法杂记--装饰器，类的特殊方法，常量类</title>
+        <pubTime>2018-12-15T04:00:37.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
+          
+             
+              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2016/06/07/python%20%E4%BD%BF%E7%94%A8SQLite/</loc>
     <lastmod>2018-12-21T11:53:29.171Z</lastmod>
     <data>
@@ -3533,22 +3576,21 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2017/08/28/python%20%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E7%BC%96%E7%A0%81/</loc>
-    <lastmod>2018-12-21T11:53:29.171Z</lastmod>
+    <loc>http://wulc.github.io/2016/08/23/Supervisor%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2018-12-21T11:53:29.169Z</lastmod>
     <data>
         <display>
-        <title>python 中的字符串与编码</title>
-        <pubTime>2017-08-28T04:00:37.000Z</pubTime>
+        <title>Supervisor的简介与使用</title>
+        <pubTime>2016-08-23T14:06:31.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>Linux</tag>
+         
+        <tag>工具使用</tag>
          
          
            
              
-              <breadCrumb title="python" url="http://wulc.github.io/categories/python/"/>
-          
-             
-              <breadCrumb title="语法" url="http://wulc.github.io/categories/python/%E8%AF%AD%E6%B3%95/"/>
+              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -3598,28 +3640,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/08/23/Supervisor%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2018-12-21T11:53:29.169Z</lastmod>
-    <data>
-        <display>
-        <title>Supervisor的简介与使用</title>
-        <pubTime>2016-08-23T14:06:31.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>工具使用</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://wulc.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2018/03/18/Wand%20%E7%AE%97%E6%B3%95%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2018-12-21T11:53:29.169Z</lastmod>
     <data>
@@ -3633,6 +3653,26 @@
            
              
               <breadCrumb title="计算广告" url="http://wulc.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2018/06/16/ROC%20%E6%9B%B2%E7%BA%BF%E4%B8%8E%20PR%20%E6%9B%B2%E7%BA%BF/</loc>
+    <lastmod>2018-12-21T11:53:29.168Z</lastmod>
+    <data>
+        <display>
+        <title>ROC 曲线与 PR 曲线</title>
+        <pubTime>2018-06-16T04:00:37.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -3662,19 +3702,21 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/06/16/ROC%20%E6%9B%B2%E7%BA%BF%E4%B8%8E%20PR%20%E6%9B%B2%E7%BA%BF/</loc>
-    <lastmod>2018-12-21T11:53:29.168Z</lastmod>
+    <loc>http://wulc.github.io/2015/11/21/Linux%E7%9A%84CPU%E8%B0%83%E5%BA%A6/</loc>
+    <lastmod>2018-12-21T11:53:29.161Z</lastmod>
     <data>
         <display>
-        <title>ROC 曲线与 PR 曲线</title>
-        <pubTime>2018-06-16T04:00:37.000Z</pubTime>
+        <title>Linux的CPU调度</title>
+        <pubTime>2015-11-21T12:10:38.000Z</pubTime>
         
-        <tag>机器学习</tag>
+        <tag>操作系统</tag>
+         
+        <tag>Linux</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="http://wulc.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="Linux" url="http://wulc.github.io/categories/Linux/"/>
           
         </display>
     </data>
@@ -3728,6 +3770,26 @@
 
     
   <url>
+    <loc>http://wulc.github.io/2015/11/21/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E5%92%8C%E5%BA%93%E5%87%BD%E6%95%B0%E7%9A%84%E8%B0%83%E7%94%A8/</loc>
+    <lastmod>2018-12-21T11:53:29.161Z</lastmod>
+    <data>
+        <display>
+        <title>Linux命令的系统调用和库函数的调用</title>
+        <pubTime>2015-11-21T12:23:42.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="http://wulc.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wulc.github.io/2015/12/06/Linux%E9%94%81%E5%AE%9A%E7%94%A8%E6%88%B7%E4%B8%8E%E8%A7%A3%E9%94%81/</loc>
     <lastmod>2018-12-21T11:53:29.161Z</lastmod>
     <data>
@@ -3768,26 +3830,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/12/05/Makefile%20%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.161Z</lastmod>
-    <data>
-        <display>
-        <title>Makefile 简介</title>
-        <pubTime>2018-12-05T14:15:20.000Z</pubTime>
-        
-        <tag>C++</tag>
-         
-         
-           
-             
-              <breadCrumb title="C++" url="http://wulc.github.io/categories/C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2017/11/05/MachineLearning%20with%20Spark%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2018-12-21T11:53:29.161Z</lastmod>
     <data>
@@ -3812,34 +3854,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2015/11/21/Linux%E7%9A%84CPU%E8%B0%83%E5%BA%A6/</loc>
+    <loc>http://wulc.github.io/2018/12/05/Makefile%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2018-12-21T11:53:29.161Z</lastmod>
     <data>
         <display>
-        <title>Linux的CPU调度</title>
-        <pubTime>2015-11-21T12:10:38.000Z</pubTime>
-        
-        <tag>操作系统</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="http://wulc.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2018/12/07/Makefile%20%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3(2)-%E5%8F%98%E9%87%8F%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E4%B8%8E%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2018-12-21T11:53:29.161Z</lastmod>
-    <data>
-        <display>
-        <title>Makefile 语法详解(2)-变量、条件判断与函数</title>
-        <pubTime>2018-12-07T14:15:20.000Z</pubTime>
+        <title>Makefile 简介</title>
+        <pubTime>2018-12-05T14:15:20.000Z</pubTime>
         
         <tag>C++</tag>
          
@@ -3894,12 +3914,32 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2015/11/21/Linux%E5%91%BD%E4%BB%A4%E7%9A%84%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E5%92%8C%E5%BA%93%E5%87%BD%E6%95%B0%E7%9A%84%E8%B0%83%E7%94%A8/</loc>
+    <loc>http://wulc.github.io/2018/12/07/Makefile%20%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3(2)-%E5%8F%98%E9%87%8F%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E4%B8%8E%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2018-12-21T11:53:29.161Z</lastmod>
     <data>
         <display>
-        <title>Linux命令的系统调用和库函数的调用</title>
-        <pubTime>2015-11-21T12:23:42.000Z</pubTime>
+        <title>Makefile 语法详解(2)-变量、条件判断与函数</title>
+        <pubTime>2018-12-07T14:15:20.000Z</pubTime>
+        
+        <tag>C++</tag>
+         
+         
+           
+             
+              <breadCrumb title="C++" url="http://wulc.github.io/categories/C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2015/11/21/Linux%20shell%E4%B8%8B%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2018-12-21T11:53:29.159Z</lastmod>
+    <data>
+        <display>
+        <title>Linux shell下删除文件名乱码文件</title>
+        <pubTime>2015-11-21T06:58:46.000Z</pubTime>
         
         <tag>Linux</tag>
          
@@ -3920,26 +3960,6 @@
         <display>
         <title>Linux shell下常用快捷键</title>
         <pubTime>2015-11-21T06:50:26.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="http://wulc.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2015/11/21/Linux%20shell%E4%B8%8B%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2018-12-21T11:53:29.159Z</lastmod>
-    <data>
-        <display>
-        <title>Linux shell下删除文件名乱码文件</title>
-        <pubTime>2015-11-21T06:58:46.000Z</pubTime>
         
         <tag>Linux</tag>
          
@@ -4021,49 +4041,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/05/15/Java%E5%86%85%E7%BD%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.139Z</lastmod>
-    <data>
-        <display>
-        <title>Java内置的数据类型</title>
-        <pubTime>2016-05-15T14:31:01.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
-          
-             
-              <breadCrumb title="语法" url="http://wulc.github.io/categories/Java/%E8%AF%AD%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/01/13/Java%E4%B8%ADString%E5%92%8Cbyte%5B%5D%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2018-12-21T11:53:29.139Z</lastmod>
-    <data>
-        <display>
-        <title>Java中String和byte[]的转换</title>
-        <pubTime>2016-01-13T01:14:13.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2016/04/03/Java%E4%B8%ADIterator%E5%92%8CEnumeration%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
     <lastmod>2018-12-21T11:53:29.139Z</lastmod>
     <data>
@@ -4110,12 +4087,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/04/03/Java%E4%B8%ADHashtable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2018-12-21T11:53:29.138Z</lastmod>
+    <loc>http://wulc.github.io/2016/05/15/Java%E5%86%85%E7%BD%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.139Z</lastmod>
     <data>
         <display>
-        <title>Java中Hashtable与HashMap的区别</title>
-        <pubTime>2016-04-03T14:35:42.000Z</pubTime>
+        <title>Java内置的数据类型</title>
+        <pubTime>2016-05-15T14:31:01.000Z</pubTime>
         
         <tag>Java</tag>
          
@@ -4133,21 +4110,19 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/06/10/HTTP%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <loc>http://wulc.github.io/2016/01/13/Java%E4%B8%ADString%E5%92%8Cbyte%5B%5D%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2018-12-21T11:53:29.139Z</lastmod>
     <data>
         <display>
-        <title>HTTP协议简介</title>
-        <pubTime>2016-06-10T13:47:59.000Z</pubTime>
+        <title>Java中String和byte[]的转换</title>
+        <pubTime>2016-01-13T01:14:13.000Z</pubTime>
         
-        <tag>web</tag>
-         
-        <tag>计算机网络</tag>
+        <tag>Java</tag>
          
          
            
              
-              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
+              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -4155,34 +4130,12 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/10/02/Google%20C++%20Style%20Guide%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <loc>http://wulc.github.io/2016/04/03/Java%E4%B8%ADHashtable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2018-12-21T11:53:29.138Z</lastmod>
     <data>
         <display>
-        <title>Google C++ Style Guide 阅读笔记</title>
-        <pubTime>2018-10-02T13:53:19.000Z</pubTime>
-        
-        <tag>C++</tag>
-         
-        <tag>编程</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wulc.github.io/2016/06/20/Java%20%E4%B8%AD%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
-    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
-    <data>
-        <display>
-        <title>Java 中的修饰符</title>
-        <pubTime>2016-06-20T14:31:01.000Z</pubTime>
+        <title>Java中Hashtable与HashMap的区别</title>
+        <pubTime>2016-04-03T14:35:42.000Z</pubTime>
         
         <tag>Java</tag>
          
@@ -4222,31 +4175,6 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2016/02/20/Hadoop2-6-0%E5%AE%89%E8%A3%85%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
-    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
-    <data>
-        <display>
-        <title>Hadoop2.6.0安装注意事项</title>
-        <pubTime>2016-02-20T14:15:20.000Z</pubTime>
-        
-        <tag>Hadoop</tag>
-         
-        <tag>分布式</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hadoop" url="http://wulc.github.io/categories/Hadoop/"/>
-          
-             
-              <breadCrumb title="安装配置" url="http://wulc.github.io/categories/Hadoop/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wulc.github.io/2018/10/18/Code%20Complete%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E4%BB%A3%E7%A0%81(1)/</loc>
     <lastmod>2018-12-21T11:53:29.131Z</lastmod>
     <data>
@@ -4254,6 +4182,71 @@
         <title>Code Complete 阅读笔记-创建高质量的代码(1)</title>
         <pubTime>2018-10-18T14:21:25.000Z</pubTime>
         
+        <tag>编程</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2018/10/31/Code%20Complete%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E4%BB%A3%E7%A0%81(2)/</loc>
+    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <data>
+        <display>
+        <title>Code Complete 阅读笔记-创建高质量的代码(2)</title>
+        <pubTime>2018-10-31T14:21:25.000Z</pubTime>
+        
+        <tag>编程</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/06/20/Java%20%E4%B8%AD%E7%9A%84%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
+    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <data>
+        <display>
+        <title>Java 中的修饰符</title>
+        <pubTime>2016-06-20T14:31:01.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://wulc.github.io/categories/Java/"/>
+          
+             
+              <breadCrumb title="语法" url="http://wulc.github.io/categories/Java/%E8%AF%AD%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2018/10/02/Google%20C++%20Style%20Guide%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <data>
+        <display>
+        <title>Google C++ Style Guide 阅读笔记</title>
+        <pubTime>2018-10-02T13:53:19.000Z</pubTime>
+        
+        <tag>C++</tag>
+         
         <tag>编程</tag>
          
          
@@ -4315,19 +4308,46 @@
 
     
   <url>
-    <loc>http://wulc.github.io/2018/10/31/Code%20Complete%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%88%9B%E5%BB%BA%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E4%BB%A3%E7%A0%81(2)/</loc>
+    <loc>http://wulc.github.io/2016/02/20/Hadoop2-6-0%E5%AE%89%E8%A3%85%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
     <lastmod>2018-12-21T11:53:29.131Z</lastmod>
     <data>
         <display>
-        <title>Code Complete 阅读笔记-创建高质量的代码(2)</title>
-        <pubTime>2018-10-31T14:21:25.000Z</pubTime>
+        <title>Hadoop2.6.0安装注意事项</title>
+        <pubTime>2016-02-20T14:15:20.000Z</pubTime>
         
-        <tag>编程</tag>
+        <tag>Hadoop</tag>
+         
+        <tag>分布式</tag>
          
          
            
              
-              <breadCrumb title="编程" url="http://wulc.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+              <breadCrumb title="Hadoop" url="http://wulc.github.io/categories/Hadoop/"/>
+          
+             
+              <breadCrumb title="安装配置" url="http://wulc.github.io/categories/Hadoop/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wulc.github.io/2016/06/10/HTTP%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2018-12-21T11:53:29.131Z</lastmod>
+    <data>
+        <display>
+        <title>HTTP协议简介</title>
+        <pubTime>2016-06-10T13:47:59.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+        <tag>计算机网络</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂" url="http://wulc.github.io/categories/%E6%9D%82/"/>
           
         </display>
     </data>

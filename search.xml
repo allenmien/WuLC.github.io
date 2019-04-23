@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title><![CDATA[Markdown 图片免费上传工具]]></title>
+      <url>http://wulc.github.io/2019/04/20/Markdown%20%E5%9B%BE%E7%89%87%E5%85%8D%E8%B4%B9%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<p>对于习惯用 markdown 写作的人，日常最烦恼的问题之一应该是如何显示自己的图片，markdown 文本存储的是图片的地址（本地路径或url），而最为常用的是 url，至少我写文章是这样的。某些 markdown 编辑器也提供了 markdown 图床服务，如有道云笔记，cmd_markdown等, 但是这些编辑器要么太丑（有道云笔记，说的就是你），要么就是比较小众（cmd markdown），生怕哪天停止运营了文章里的图片就没了，而且这些服务一般是要收费的。</p>
+<p>那么有没有一种方法能够为本地图片生成 public url，同时保证数据有较高的可用性，而且最好是免费的。Github 其实已经间接为我们提供了这样的服务，只是这个步骤较为繁琐，本文就是针对这一点开发了一个小工具来简化这个过程，代码已开源，见 <a href="https://github.com/WuLC/MarkdownImageUploader" target="_blank" rel="external">MarkdownImageUploader</a>，本文主要介绍其基本原理和使用方法。</p>
+<a id="more"></a>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>这个方法是基于 Github 会为 repository 中的每张图片生成一个 public url，假设你的 Github 某个 repository 的有某张图片, 那么访问这张图片的 public url 为</p>
+<p><code>https://raw.githubusercontent.com/{user}/{repository}/{branch}/{img_path}</code></p>
+<p>其中，<code>{user}</code> 就是你的 Github 用户名称，<code>{repository}</code> 是你的仓库名称，<code>{branch}</code> 是你的分支名称，<code>{img_path}</code> 则是这张图片在这个 repository 中的路径；如对于<a href="https://github.com/WuLC/MarkDownImages/blob/master/GFS_Architecture.png?1556003688166" target="_blank" rel="external">这张图片</a>，其 public url 为</p>
+<p><code>https://raw.githubusercontent.com/wulc/MarkDownImages/master/GFS_Architecture.png</code></p>
+<p>所以此时问题就变得很直观了，只需要将需要生成 public url 的图片 push 到 github，然后按照上面的规则生成图片的 public url 即可，感谢 Github。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>但是这个过程如果重复多次也会显得重复而繁琐，每次都要 <code>add &amp;&amp; commit &amp;&amp; push</code>, 因此，本文开发了一个简单的小工具 <a href="https://github.com/WuLC/MarkdownImageUploader" target="_blank" rel="external">MarkdownImageUploader</a> 来让这个过程更为便捷。</p>
+<p>MarkdownImageUploader 主要思想就是通过提供一个简单的界面，通过按钮来提供上面的功能，按钮按下后执行 <code>git commit</code> 等操作，因此使用前需要确保</p>
+<p><strong>1. git 已经安装且在 PATH 环境变量中</strong><br><strong>2. 上传的图片的仓库是 public 且具备修改权限</strong></p>
+<p>建议在使用前首先在 github 上建立一个 public repository，专门用于存储图片；并配置 MarkdownImageUploader 的 repo_address 为其地址，然后配置本地存储这个 repository 的路径，这个配置只需要在第一次使用时进行配置，之后 MarkdownImageUploader 会在  config 目录下生成文件保存这些信息，之后的使用也可随时更新这些信息。该过程如下图所示</p>
+<p><img src="https://raw.githubusercontent.com/WuLC/MarkdownImageUploader/master/imgs/configure.gif" alt="configure"></p>
+<p>在配置后，点击 <code>commit &amp; push</code> 进行图片的上传，程序首先会检查配置的本地 repository 的路径中是否已经存在了这个 repository，没有的话会先 clone 到本地，然后填写 commit message 进行 commit 和 push，需要注意这两者都不能为空，我一般会将文章的标题作为 commit message。该过程如下所示</p>
+<p><img src="https://raw.githubusercontent.com/WuLC/MarkdownImageUploader/master/imgs/upload.gif" alt="upload"></p>
+<p>Windows 用户可直接从<a href="https://github.com/WuLC/MarkdownImageUploader/releases" target="_blank" rel="external">release</a>下载可执行文件，win10 和 win7 的 64 位系统测试过都可用，32位系统的不确定，但是也可通过源码和 <a href="https://www.pyinstaller.org/" target="_blank" rel="external">PyInstaller</a> 进行构建；Linux 和 Mac 可以下载源码，然后直接运行 <code>python main.py</code> 为后台程序，但是需要安装依赖库 <a href="https://github.com/PySimpleGUI/PySimpleGUI" target="_blank" rel="external">PySimpleGUI</a>，而且 <a href="https://github.com/PySimpleGUI/PySimpleGUI#platforms" target="_blank" rel="external">PySimpleGUI 在 Mac 上适配性不太好</a>，不确保能顺利运行。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>代码使用的 GUI 库是 <a href="https://github.com/PySimpleGUI/PySimpleGUI#platforms" target="_blank" rel="external">PySimpleGUI</a>，一个小众但是比较方便库；调用 git 命令使用的 python 的 subprocess 库，调用 git 命令时会捕获异常并弹窗提醒，但是当前的异常没有细分（比如说 commit &amp; push 失败后，并不知道是 commit 或 push 环节失败的）；所以直接使用时建议先在命令行跑通 git 这几条命令。</p>
+<p>代码很简单，所有代码不到 200 行（见<code>main.py</code>), 程序的 UI 极丑（捂脸），但是目前基本能满足我的使用需求，先使用一段时间看看，后续如果有 bug 或新的需求再更改。</p>
+<p>最后， Github 生成的图片的 url 的域名是 <code>githubusercontent.com</code>, 万一哪天 Github 放弃了这个域名或不再提供单张图片的 url，那就凉凉了，不过在当前看来短期发生这个事情的可能性不大。而其实通过付费使用大厂提供的 markdown 图床也是很方便的，如果有道云笔记把界面做得更好看一点，其实我还是挺愿意为其付费的。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[通过 Flask, Docker, Jenkins 和 Kubernets 部署机器学习模型]]></title>
       <url>http://wulc.github.io/2019/04/19/%E9%80%9A%E8%BF%87%20Flask,%20Docker,%20Jenkins%20%E5%92%8C%20Kubernets%20%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/</url>
       <content type="html"><![CDATA[<p>本文主要介绍部署机器学习模型的一种自动化方式，如题所示，通过 <a href="http://flask.pocoo.org/" target="_blank" rel="external">Flask</a>，<a href="https://www.docker.com/" target="_blank" rel="external">Docker</a>, <a href="https://jenkins.io/" target="_blank" rel="external">Jenkins</a> 和 <a href="https://kubernetes.io" target="_blank" rel="external">Kubernets</a> 实现。基本原理就是通过 Fflask 提供暴露出 <a href="https://searchmicroservices.techtarget.com/definition/RESTful-API" target="_blank" rel="external">RESTful API</a> 接收客户端的 predict 请求，然后将这个服务打包成一个 docker image 便于部署和迁移，当代码或模型更新时通过 Jenkins 触发自动构建新的 docker image，而通过 kubernets 管理容器则让整个服务具备伸缩性和可靠性。本文主要参考了 <a href="https://medium.com/sfu-big-data/machine-learning-deployment-a-storm-in-a-teacup-10541ec3b0d6" target="_blank" rel="external">Deploy a machine learning model in 10 minutes with Flask, Docker, and Jenkins</a>，并在其基础上进行了完善和拓展，如通过一个简单的 shell script 实现 jenkins 的触发功能，并添加了 kubernets 部分的介绍等。本文的对应的所有代码可从 <a href="https://github.com/WuLC/DeployMachineLearningModel" target="_blank" rel="external">DeployMachineLearningModel</a> 获取。</p>
@@ -12865,48 +12890,6 @@ not a dynamic executable
     </entry>
     
     <entry>
-      <title><![CDATA[听说你觉得生活很无聊]]></title>
-      <url>http://wulc.github.io/2015/11/18/%E5%90%AC%E8%AF%B4%E4%BD%A0%E8%A7%89%E5%BE%97%E7%94%9F%E6%B4%BB%E5%BE%88%E6%97%A0%E8%81%8A/</url>
-      <content type="html"><![CDATA[<blockquote>
-<p>文章为转载，作者：马德，作家，已出版《当我放过自己的时候》、《允许自己虚度时光》等。</p>
-</blockquote>
-<p>（一）<br> 一辈子活下来，常常是，在最有意思的时候，没有有意思地过，在最没意思的时候，想要有意思地过结果却再也过不出意思。</p>
-<p>或者，换一种表述就是，在看不透的时候，好看的人生过得不好看；看透了，想过得好看，可是人生已经没法看了。</p>
-<p>这句话说得并不绕。其实，人生比这个绕多了。            </p>
-<p>人生就是这样的一场游戏：在欲望浮沉中，把生命扔到很远很远，最后，只为了找到很近很近的那个简单的自己。</p>
-<a id="more"></a>
-<p>（二）</p>
-<p>有一年，到大连旅游，参观旅顺日俄监狱。印象中，地牢般的监狱，只有很窄的一方窗户开在地上，可以看到人世的阳光。</p>
-<p>在一孔窗户周围，看到一茎绿草，小小的，嫩嫩的，在风中摇曳。我想，这应是在那里苦难度日的囚犯们，所能见到的全部蓬勃和生机了吧。但是，那么多的监牢，每一孔窗户前，会恰好有一粒草的种子落在那里吗？会有生命的绿意，落在绝望的人生里吗？</p>
-<p>那得多么幸运啊！</p>
-<p>而我们的窗外，就有蓝天白云，我们的身边，就有鲜花绿草，没有谁囚禁我们，但我们却囚禁了自己。</p>
-<p>常常是，在追不上的时候，才去追；在味道尽去的时候，才想品；在不得已时候，才珍惜得已；在人生的大片美好过到支离破碎后，才去捡拾一些碎片，拼凑美好。</p>
-<p>（三）<br><strong>生活就是一个七天接着一个七天。</strong></p>
-<p>不是日子重复导致了枯燥和无聊，而是你枯燥无聊，把气撒在了日子的重复上。</p>
-<p>其实，都在重复。位高权重的，富可敌国的，没有谁的日子不是一个七天接着另一个七天。只不过，当你仰慕谁，就会美化对方的重复，认为人家重复得有趣味有意义。其实，这一切，都是仰慕的光环散发出的五彩。</p>
-<p>重复，赋予每个人的本质和意义都是一样的。</p>
-<p>多重复才算重复呢？你看那些一天到晚打麻将的人，每天面对的就是那一百多张牌，然后，洗牌，码牌，打牌，和牌。论理说，该盯得头晕眼花，坐得腰酸腿疼，琢磨得心力交瘁了吧，但嗜打的人从来乐此不疲，没有一个喊累的，也没有一个喊重复的。</p>
-<p>为什么呢？上瘾。</p>
-<p>其实，有瘾，才是快乐生活的关键。瘾，就是情趣，它会让每一个日子，像绽开的花朵，一寸一寸阳光踩过的花瓣，无论多重复，都会美得各不相同。</p>
-<p>（四）</p>
-<p>活得没滋味的时候，去坐坐北京地铁，从1号线到15号线，在上班的早高峰。</p>
-<p>你一下子就释然了。当然了，一下子也更崩溃了。</p>
-<p>密密麻麻的人，如雨前的蚁，簇拥着，没有喧闹，没有声响，是令人压抑的寂静。几乎不用走，“哗”被推上车，“哗”又被挤下车。就这样，每天，还未曾上班呢，两三个小时，先折耗在了路上。无论你蓄了多少激情和活力，也会被日复一日地磨蚀殆尽。关键是，还有下班呢，还有一个晚高峰等着呢。</p>
-<p>谁比谁活得更容易？</p>
-<p>但，即便这样，一定也有活得幸福的“北漂”。幸福的人生活里不是没有不堪和琐碎，不是没有疲惫和失望，而是不管生活给了多大的泥淖，也要让生命拔腿出来，临清流，吹惠风，也要在心中修篱种菊，怡养内在的优雅和高贵。</p>
-<p><strong>幸福是一种自我剥离的能力，以及自我生成的能力。生活中，没有多少幸福是现成的，有幸福的人，只是会幸福罢了。</strong></p>
-<p>（五）</p>
-<p>一个整宿睡得很好的人，会嫉妒一个睡眠质量不怎么好、甚至半宿还会醒一会儿的人。乍听，简直不可思议。再解释，你就明白了。原来，那个睡得很“好”的人，是靠安定这种镇静药片睡过一个晚上又一个晚上的。</p>
-<p>如果不说透，从表面上看，应该是后者羡慕甚至嫉妒前者才是。因为，前者太好了，好得简直无与伦比。</p>
-<p>生活，有多少是我们看透了本质的。你羡慕的权贵，前呼后拥，看起来那么风光，可是风光背后有多少痛苦，对方不说，你不会知道；你羡慕的富有，宝马香车，锦衣玉食，看起来，是那么荣华，这荣华背后有多少痛苦，对方不说，你不会知道。</p>
-<p>也就是说，即便失点眠，你依然是那个睡得很好的人。即便过得平凡而宁静，你也会赢得别人羡慕。甚至，这里边，那些你羡慕着的人也在羡慕你。</p>
-<p>只是，你要知道，这个世界没有一个人愿把这种羡慕轻易告诉你。</p>
-<hr>
-<p>转载<br>作者：马德，作家，已出版《当我放过自己的时候》、《允许自己虚度时光》等。</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[写给大四]]></title>
       <url>http://wulc.github.io/2015/11/18/%E5%86%99%E7%BB%99%E5%A4%A7%E5%9B%9B/</url>
       <content type="html"><![CDATA[<blockquote>
@@ -12966,6 +12949,48 @@ not a dynamic executable
 <p>所以，接下来我再问为什么，你们可以说：“请先跟你的内心对话。”</p>
 <p>我现在内心里的想法，就是希望你们接下来这一年不被虚度。这是你们人生中最美好时代中的一年，它不是拿来过渡、等待或者牺牲的。现在这一年才刚刚开始。</p>
 <p>大四加油！</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[听说你觉得生活很无聊]]></title>
+      <url>http://wulc.github.io/2015/11/18/%E5%90%AC%E8%AF%B4%E4%BD%A0%E8%A7%89%E5%BE%97%E7%94%9F%E6%B4%BB%E5%BE%88%E6%97%A0%E8%81%8A/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>文章为转载，作者：马德，作家，已出版《当我放过自己的时候》、《允许自己虚度时光》等。</p>
+</blockquote>
+<p>（一）<br> 一辈子活下来，常常是，在最有意思的时候，没有有意思地过，在最没意思的时候，想要有意思地过结果却再也过不出意思。</p>
+<p>或者，换一种表述就是，在看不透的时候，好看的人生过得不好看；看透了，想过得好看，可是人生已经没法看了。</p>
+<p>这句话说得并不绕。其实，人生比这个绕多了。            </p>
+<p>人生就是这样的一场游戏：在欲望浮沉中，把生命扔到很远很远，最后，只为了找到很近很近的那个简单的自己。</p>
+<a id="more"></a>
+<p>（二）</p>
+<p>有一年，到大连旅游，参观旅顺日俄监狱。印象中，地牢般的监狱，只有很窄的一方窗户开在地上，可以看到人世的阳光。</p>
+<p>在一孔窗户周围，看到一茎绿草，小小的，嫩嫩的，在风中摇曳。我想，这应是在那里苦难度日的囚犯们，所能见到的全部蓬勃和生机了吧。但是，那么多的监牢，每一孔窗户前，会恰好有一粒草的种子落在那里吗？会有生命的绿意，落在绝望的人生里吗？</p>
+<p>那得多么幸运啊！</p>
+<p>而我们的窗外，就有蓝天白云，我们的身边，就有鲜花绿草，没有谁囚禁我们，但我们却囚禁了自己。</p>
+<p>常常是，在追不上的时候，才去追；在味道尽去的时候，才想品；在不得已时候，才珍惜得已；在人生的大片美好过到支离破碎后，才去捡拾一些碎片，拼凑美好。</p>
+<p>（三）<br><strong>生活就是一个七天接着一个七天。</strong></p>
+<p>不是日子重复导致了枯燥和无聊，而是你枯燥无聊，把气撒在了日子的重复上。</p>
+<p>其实，都在重复。位高权重的，富可敌国的，没有谁的日子不是一个七天接着另一个七天。只不过，当你仰慕谁，就会美化对方的重复，认为人家重复得有趣味有意义。其实，这一切，都是仰慕的光环散发出的五彩。</p>
+<p>重复，赋予每个人的本质和意义都是一样的。</p>
+<p>多重复才算重复呢？你看那些一天到晚打麻将的人，每天面对的就是那一百多张牌，然后，洗牌，码牌，打牌，和牌。论理说，该盯得头晕眼花，坐得腰酸腿疼，琢磨得心力交瘁了吧，但嗜打的人从来乐此不疲，没有一个喊累的，也没有一个喊重复的。</p>
+<p>为什么呢？上瘾。</p>
+<p>其实，有瘾，才是快乐生活的关键。瘾，就是情趣，它会让每一个日子，像绽开的花朵，一寸一寸阳光踩过的花瓣，无论多重复，都会美得各不相同。</p>
+<p>（四）</p>
+<p>活得没滋味的时候，去坐坐北京地铁，从1号线到15号线，在上班的早高峰。</p>
+<p>你一下子就释然了。当然了，一下子也更崩溃了。</p>
+<p>密密麻麻的人，如雨前的蚁，簇拥着，没有喧闹，没有声响，是令人压抑的寂静。几乎不用走，“哗”被推上车，“哗”又被挤下车。就这样，每天，还未曾上班呢，两三个小时，先折耗在了路上。无论你蓄了多少激情和活力，也会被日复一日地磨蚀殆尽。关键是，还有下班呢，还有一个晚高峰等着呢。</p>
+<p>谁比谁活得更容易？</p>
+<p>但，即便这样，一定也有活得幸福的“北漂”。幸福的人生活里不是没有不堪和琐碎，不是没有疲惫和失望，而是不管生活给了多大的泥淖，也要让生命拔腿出来，临清流，吹惠风，也要在心中修篱种菊，怡养内在的优雅和高贵。</p>
+<p><strong>幸福是一种自我剥离的能力，以及自我生成的能力。生活中，没有多少幸福是现成的，有幸福的人，只是会幸福罢了。</strong></p>
+<p>（五）</p>
+<p>一个整宿睡得很好的人，会嫉妒一个睡眠质量不怎么好、甚至半宿还会醒一会儿的人。乍听，简直不可思议。再解释，你就明白了。原来，那个睡得很“好”的人，是靠安定这种镇静药片睡过一个晚上又一个晚上的。</p>
+<p>如果不说透，从表面上看，应该是后者羡慕甚至嫉妒前者才是。因为，前者太好了，好得简直无与伦比。</p>
+<p>生活，有多少是我们看透了本质的。你羡慕的权贵，前呼后拥，看起来那么风光，可是风光背后有多少痛苦，对方不说，你不会知道；你羡慕的富有，宝马香车，锦衣玉食，看起来，是那么荣华，这荣华背后有多少痛苦，对方不说，你不会知道。</p>
+<p>也就是说，即便失点眠，你依然是那个睡得很好的人。即便过得平凡而宁静，你也会赢得别人羡慕。甚至，这里边，那些你羡慕着的人也在羡慕你。</p>
+<p>只是，你要知道，这个世界没有一个人愿把这种羡慕轻易告诉你。</p>
+<hr>
+<p>转载<br>作者：马德，作家，已出版《当我放过自己的时候》、《允许自己虚度时光》等。</p>
 ]]></content>
     </entry>
     
