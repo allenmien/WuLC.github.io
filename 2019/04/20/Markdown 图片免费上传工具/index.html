@@ -70,7 +70,7 @@
 <meta property="og:description" content="对于习惯用 markdown 写作的人，日常最烦恼的问题之一应该是如何显示自己的图片，markdown 文本存储的是图片的地址（本地路径或url），而最为常用的是 url，至少我写文章是这样的。某些 markdown 编辑器也提供了 markdown 图床服务，如有道云笔记，cmd_markdown等, 但是这些编辑器要么太丑（有道云笔记，说的就是你），要么就是比较小众（cmd markdown）">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkdownImageUploader/master/imgs/configure.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/WuLC/MarkdownImageUploader/master/imgs/upload.gif">
-<meta property="og:updated_time" content="2019-04-23T08:23:05.864Z">
+<meta property="og:updated_time" content="2019-04-23T08:40:05.706Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown 图片免费上传工具">
 <meta name="twitter:description" content="对于习惯用 markdown 写作的人，日常最烦恼的问题之一应该是如何显示自己的图片，markdown 文本存储的是图片的地址（本地路径或url），而最为常用的是 url，至少我写文章是这样的。某些 markdown 编辑器也提供了 markdown 图床服务，如有道云笔记，cmd_markdown等, 但是这些编辑器要么太丑（有道云笔记，说的就是你），要么就是比较小众（cmd markdown）">
@@ -371,7 +371,7 @@
 <p>在配置后，点击 <code>commit &amp; push</code> 进行图片的上传，程序首先会检查配置的本地 repository 的路径中是否已经存在了这个 repository，没有的话会先 clone 到本地，然后填写 commit message 进行 commit 和 push，需要注意这两者都不能为空，我一般会将文章的标题作为 commit message。该过程如下所示</p>
 <p><img src="https://raw.githubusercontent.com/WuLC/MarkdownImageUploader/master/imgs/upload.gif" alt="upload"></p>
 <p>Windows 用户可直接从<a href="https://github.com/WuLC/MarkdownImageUploader/releases" target="_blank" rel="external">release</a>下载可执行文件，win10 和 win7 的 64 位系统测试过都可用，32位系统的不确定，但是也可通过源码和 <a href="https://www.pyinstaller.org/" target="_blank" rel="external">PyInstaller</a> 进行构建；Linux 和 Mac 可以下载源码，然后直接运行 <code>python main.py</code> 为后台程序，但是需要安装依赖库 <a href="https://github.com/PySimpleGUI/PySimpleGUI" target="_blank" rel="external">PySimpleGUI</a>，而且 <a href="https://github.com/PySimpleGUI/PySimpleGUI#platforms" target="_blank" rel="external">PySimpleGUI 在 Mac 上适配性不太好</a>，不确保能顺利运行。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>代码使用的 GUI 库是 <a href="https://github.com/PySimpleGUI/PySimpleGUI#platforms" target="_blank" rel="external">PySimpleGUI</a>，一个小众但是比较方便库；调用 git 命令使用的 python 的 subprocess 库，调用 git 命令时会捕获异常并弹窗提醒，但是当前的异常没有细分（比如说 commit &amp; push 失败后，并不知道是 commit 或 push 环节失败的）；所以直接使用时建议先在命令行跑通 git 这几条命令。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>代码使用的 GUI 库是 <a href="https://github.com/PySimpleGUI/PySimpleGUI#platforms" target="_blank" rel="external">PySimpleGUI</a>，一个小众但是比较方便的库；调用 git 命令使用的 python 的 subprocess 库，调用 git 命令时会捕获异常并弹窗提醒，但是当前的异常没有细分（比如说 commit &amp; push 失败后，并不知道是 commit 或 push 环节失败的）；所以直接使用时建议先在命令行跑通 git 这几条命令。</p>
 <p>代码很简单，所有代码不到 200 行（见<code>main.py</code>), 程序的 UI 极丑（捂脸），但是目前基本能满足我的使用需求，先使用一段时间看看，后续如果有 bug 或新的需求再更改。</p>
 <p>最后， Github 生成的图片的 url 的域名是 <code>githubusercontent.com</code>, 万一哪天 Github 放弃了这个域名或不再提供单张图片的 url，那就凉凉了，不过在当前看来短期发生这个事情的可能性不大。而其实通过付费使用大厂提供的 markdown 图床也是很方便的，如果有道云笔记把界面做得更好看一点，其实我还是挺愿意为其付费的。</p>
 
