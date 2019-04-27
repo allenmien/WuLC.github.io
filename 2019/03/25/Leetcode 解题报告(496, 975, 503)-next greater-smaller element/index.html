@@ -62,16 +62,16 @@
 
 
 
-<meta name="description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的后一个 element。根据要求不同，这个问题又可分为 nearest of n">
+<meta name="description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的一个 element，根据要求不同，这个问题又可分为 nearest of ne">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 解题报告(496, 975, 503)-next greater/smaller element">
 <meta property="og:url" content="http://wulc.github.io/2019/03/25/Leetcode 解题报告(496, 975, 503)-next greater-smaller element/index.html">
 <meta property="og:site_name" content="吴良超的学习笔记">
-<meta property="og:description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的后一个 element。根据要求不同，这个问题又可分为 nearest of n">
-<meta property="og:updated_time" content="2019-04-27T02:28:52.872Z">
+<meta property="og:description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的一个 element，根据要求不同，这个问题又可分为 nearest of ne">
+<meta property="og:updated_time" content="2019-04-27T03:45:55.846Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode 解题报告(496, 975, 503)-next greater/smaller element">
-<meta name="twitter:description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的后一个 element。根据要求不同，这个问题又可分为 nearest of n">
+<meta name="twitter:description" content="本文主要介绍在 LeetCode 题目 496. Next Greater Element I、975. Odd Even Jump、503. Next Greater Element II 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的一个 element，根据要求不同，这个问题又可分为 nearest of ne">
 
 
 
@@ -374,7 +374,7 @@
       
 
       
-        <p>本文主要介绍在 LeetCode 题目 <a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="external">496. Next Greater Element I</a>、<a href="https://leetcode.com/problems/odd-even-jump/" target="_blank" rel="external">975. Odd Even Jump</a>、<a href="https://leetcode.com/problems/next-greater-element-ii/" target="_blank" rel="external">503. Next Greater Element II</a> 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的后一个 element。根据要求不同，这个问题又可分为 nearest of next greater elements 和 smallest of next greater elements，前者指的是 next greater elements 中离当前 element 最近的那个，后者指的是 next greater elements 中最小的那个。两个问题都可通过 stack 解决，后者也可通过 treemap 解决。最后会将原来的问题进行的拓展，将原来的数据改成头尾相接的，其解决方法是增加通过将将来的数组进行 duplicate, 然后把环解开，详细请看后文。</p>
+        <p>本文主要介绍在 LeetCode 题目 <a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="external">496. Next Greater Element I</a>、<a href="https://leetcode.com/problems/odd-even-jump/" target="_blank" rel="external">975. Odd Even Jump</a>、<a href="https://leetcode.com/problems/next-greater-element-ii/" target="_blank" rel="external">503. Next Greater Element II</a> 中需要解决的共同问题：next greater element，就是对于一个数组中的每个 element，求出下标和值都比其大的一个 element，根据要求不同，这个问题又可分为 nearest of next greater elements 和 smallest of next greater elements，前者指的是 next greater elements 中离当前 element 最近的那个，后者指的是 next greater elements 中值最小的那个。两个问题都可通过 stack 解决，后者也可通过 treemap 解决。最后会将原来的问题进行的拓展，将原来的数据改成头尾相接的，其解决方法是将来的数组进行 duplicate, 然后把环解开，详细请看后文。</p>
 <a id="more"></a>
 <h2 id="nearest-of-next-greater-elements"><a href="#nearest-of-next-greater-elements" class="headerlink" title="nearest of next greater elements"></a>nearest of next greater elements</h2><p><a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="external">496. Next Greater Element I</a> 要解决的就是 nearest of next greater element 的问题，如果直接进行暴力枚举，那时间复杂度是 $O(n^2)$, 而借助栈，能够让时间复杂度降为 $O(n)$, 其过程如下所示（栈用于存储元素的下标）</p>
 <ol>
